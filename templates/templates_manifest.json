@@ -1,0 +1,34 @@
+{
+  "track_systems.xml": {
+    "original_name": "f_8046abf5b712478f.xml",
+    "new_name": "track_systems.xml"
+  },
+  "chandeliers.xml": {
+    "original_name": "f_2536abf5b71157aa.xml",
+    "new_name": "chandeliers.xml"
+  },
+  "lamps.xml": {
+    "original_name": "f_3456abf5b711a1fc.xml",
+    "new_name": "lamps.xml"
+  },
+  "electrics.xml": {
+    "original_name": "f_2216abf5b712c598.xml",
+    "new_name": "electrics.xml"
+  },
+  "lighting_fixtures.xml": {
+    "original_name": "f_6746abf5b70eb074.xml",
+    "new_name": "lighting_fixtures.xml"
+  },
+  "other_goods.xml": {
+    "original_name": "f_2996abf5b71294cc.xml",
+    "new_name": "other_goods.xml"
+  },
+  "led_luminaires.xml": {
+    "original_name": "f_5346abf5b7119f2d.xml",
+    "new_name": "led_luminaires.xml"
+  },
+  "lamp_luminaires.xml": {
+    "original_name": "f_5716abf5b71299ac.xml",
+    "new_name": "lamp_luminaires.xml"
+  }
+}
