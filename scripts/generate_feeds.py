@@ -1,20 +1,29 @@
 """
 Генератор 8 XML-фидов для Авито (Автозагрузка) компании «Дарион Свет».
 
-Модули:
-1. StockSync: синхронизация цен и остатков из Google Sheets с локальным кэшированием и фильтром stock > 0.
-2. ImageResolver: формирование прямых ссылок на изображения товаров (включая распаковку архивов Odoo).
-3. DescriptionBuilder: генерация продающего структурированного описания в блоке CDATA.
-4. FeedRouter: маршрутизация товаров по 8 целевым категориям фидов и создание валидных XML-каркасов.
-5. AvitoFeedGenerator: сборка и валидация итоговых XML-файлов в папку output/.
-6. FeedUploader: публикация фидов по протоколам FTP / SFTP или локальное сохранение.
+Архитектура:
+1. Данные номенклатуры, остатков и цен читаются напрямую из листов загружаемой Google Таблицы (1..8).
+2. Листы 1..8 сопоставляются с 8 фидами из FEEDS_CONFIG:
+   1 -> led_luminaires (led_luminaires_feed.xml)
+   2 -> track_systems (track_systems_feed.xml)
+   3 -> chandeliers (chandeliers_feed.xml)
+   4 -> lamps (lamps_feed.xml)
+   5 -> lighting_fixtures (lighting_fixtures_feed.xml)
+   6 -> lamp_luminaires (lamp_luminaires_feed.xml)
+   7 -> electrics (electrics_feed.xml)
+   8 -> other_goods (other_goods_feed.xml)
+3. Фильтрация строк:
+   - Столбец E (5): основное фото заполнено (не пустое, начинается с http).
+   - Столбец BI (61): остаток строго > 0 (очистка от неразрывных пробелов \xa0).
+   - Столбец BJ (62): цена строго > 1 (очистка от пробелов, рублей, запятых).
+4. Формирование валидного XML Avito v.3 с CDATA-описанием, ограничением длины заголовков (<= 50 симв.)
+   и лимитом до 10 фотографий на объявление. При 0 товаров генерируется валидный пустой каркас.
 """
 
 import os
 import sys
 import io
 import re
-import json
 import logging
 import ftplib
 import requests
@@ -23,11 +32,11 @@ import openpyxl
 from lxml import etree
 import paramiko
 
-# Обеспечиваем безопасный вывод UTF-8 в консоль Windows
+# Безопасный вывод UTF-8 в консоль Windows
 if sys.stdout.encoding != 'utf-8':
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 
-# Подключение файла конфигурации config.py из корня проекта
+# Подключение config.py из корня проекта
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if BASE_DIR not in sys.path:
     sys.path.insert(0, BASE_DIR)
@@ -44,17 +53,77 @@ logger.handlers = [handler]
 # Пути из config.py
 DATA_DIR = config.DATA_DIR
 OUTPUT_DIR = config.OUTPUT_DIR
-TEMPLATES_DIR = config.TEMPLATES_DIR
-EXCEL_PRODUCTS_PATH = config.NOMENCLATURE_FILE
 GOOGLE_SHEET_URL = config.GOOGLE_SHEETS_URL
 LATEST_STOCK_PATH = config.LATEST_STOCK_FILE
 TEMPLATE_STOCK_PATH = config.TEMPLATE_STOCK_FILE
-TAGS_SCHEMA_PATH = config.TAGS_SCHEMA_FILE
 FEEDS_CONFIG = config.FEEDS_CONFIG
+
+# Сопоставление номеров листов 1..8 с ключами фидов
+SHEET_INDEX_TO_FEED_KEY = {
+    1: "led_luminaires",
+    2: "track_systems",
+    3: "chandeliers",
+    4: "lamps",
+    5: "lighting_fixtures",
+    6: "lamp_luminaires",
+    7: "electrics",
+    8: "other_goods",
+}
+
+
+def clean_numeric(val) -> float:
+    """
+    Преобразует значение ячейки в float, безопасно удаляя мусорные символы:
+    неразрывные пробелы (\xa0), 'руб.', 'шт.', запятые -> точки, и т.п.
+    Возвращает 0.0 при невозможности преобразования.
+    """
+    if val is None:
+        return 0.0
+    if isinstance(val, (int, float)):
+        return float(val)
+    s = str(val).replace('\xa0', ' ')
+    s = re.sub(r'(?i)(руб\.?|шт\.?|%)', '', s)
+    s = s.replace(',', '.').strip()
+    m = re.search(r'-?\d+(?:\.\d+)?', s)
+    if m:
+        try:
+            return float(m.group())
+        except (ValueError, TypeError):
+            return 0.0
+    return 0.0
+
+
+def clean_sku(val) -> str:
+    """Очищает артикул товара от хвостовых .0 при чтении из Excel."""
+    if val is None:
+        return ""
+    if isinstance(val, (int, float)):
+        f = float(val)
+        if f.is_integer():
+            return str(int(f))
+    s = str(val).strip()
+    if re.match(r'^\d+\.0$', s):
+        return s[:-2]
+    return s
+
+
+def format_num_val(val) -> str:
+    """Форматирует числовые характеристики (мощность, лм, габариты и т.п.) в компактную строку."""
+    if val is None:
+        return ""
+    if isinstance(val, (int, float)):
+        f = float(val)
+        if f.is_integer():
+            return str(int(f))
+        return f"{f:g}"
+    s = str(val).strip()
+    if re.match(r'^-?\d+\.0$', s):
+        return s[:-2]
+    return s
 
 
 class StockSync:
-    """Модуль синхронизации остатков и цен из Google Sheets."""
+    """Модуль загрузки и кэширования актуальной книги Google Таблицы."""
 
     def __init__(self, url=GOOGLE_SHEET_URL, latest_cache=LATEST_STOCK_PATH, fallback_cache=TEMPLATE_STOCK_PATH):
         self.url = url
@@ -71,9 +140,8 @@ class StockSync:
         }
         timeout = getattr(config, "GOOGLE_SHEETS_TIMEOUT", 15)
         try:
-            logger.info(f"Запрос актуальных остатков из Google Sheets (таймаут {timeout} сек)...")
+            logger.info(f"Запрос актуальной таблицы из Google Sheets (таймаут {timeout} сек)...")
             response = requests.get(self.url, headers=headers, timeout=timeout)
-            # Проверяем, что получен валидный Excel (.xlsx начинается с сигнатуры PK..)
             if response.status_code == 200 and response.content[:2] == b"PK" and len(response.content) > 1000:
                 with open(self.latest_cache, "wb") as f:
                     f.write(response.content)
@@ -85,8 +153,7 @@ class StockSync:
             else:
                 self.sync_status = f"HTTP_{response.status_code}"
                 self.sync_message = (
-                    f"Google Таблица вернула HTTP {response.status_code} "
-                    f"(Ограниченный доступ: требуется авторизация). Используется локальный кэш."
+                    f"Google Таблица вернула HTTP {response.status_code}. Используется локальный кэш."
                 )
                 logger.warning(self.sync_message)
                 return None
@@ -96,20 +163,8 @@ class StockSync:
             logger.warning(self.sync_message)
             return None
 
-    def load_stock_dict(self) -> dict:
-        """
-        Парсит лист с остатками («Остатки СПб» / «Остатки СПБ запасы»).
-        Собирает словарь: {Артикул: {'price': int(Цена), 'stock': int(Остаток)}}.
-        Фильтрует позиции: в выгрузку попадают только товары с price > 0 AND stock > 0.
-
-        Правки C1/C2/C3/H1 (аудит 2026-10-02):
-          C3 — окно поиска строки заголовков расширено до 25 строк.
-          C1 — индексы колонок определяются динамически по именам заголовков;
-               при отсутствии совпадения — безопасный fallback на 0/9/10 с WARNING.
-          C2 — значения цены/остатка очищаются через clean_numeric() (убирает 'руб.', 'шт.',
-               пробелы, неразрывные пробелы, запятые); при невозможности распознать — WARNING.
-          H1 — фильтр: price > 0 AND stock > 0; нулевая цена → WARNING + пропуск.
-        """
+    def get_workbook(self) -> openpyxl.Workbook:
+        """Возвращает объект openpyxl.Workbook из скачанных байтов или локального кэша."""
         raw_bytes = self.download_stock_file()
         source = None
 
@@ -124,206 +179,137 @@ class StockSync:
             self.used_source = self.fallback_cache
             logger.info(f"Используем резервный эталонный кэш: {self.fallback_cache}")
         else:
-            raise FileNotFoundError(f"Файлы остатков не найдены: {self.latest_cache} и {self.fallback_cache}")
+            raise FileNotFoundError(f"Файлы таблицы не найдены: {self.latest_cache} и {self.fallback_cache}")
 
-        # Определяем целевой лист остатков
-        xl = pd.ExcelFile(source)
+        wb = openpyxl.load_workbook(source, data_only=True)
+        return wb
+
+    def load_stock_dict(self) -> dict:
+        """
+        Собирает словарь остатков и цен для обратной совместимости.
+        Поддерживает как новые листы 1..8, так и старый лист 'Остатки СПб'.
+        """
+        wb = self.get_workbook()
+        stock_dict = {}
+
+        # 1. Проверяем новые листы 1..8
+        has_numbered_sheets = any(re.match(r'^\s*([1-8])\b', s) for s in wb.sheetnames)
+        if has_numbered_sheets:
+            for sname in wb.sheetnames:
+                if not re.match(r'^\s*([1-8])\b', sname):
+                    continue
+                ws = wb[sname]
+                for r in range(3, ws.max_row + 1):
+                    sku = clean_sku(ws.cell(r, 1).value)
+                    if not sku:
+                        continue
+                    stock = clean_numeric(ws.cell(r, 61).value)
+                    price = clean_numeric(ws.cell(r, 62).value)
+                    if stock > 0 and price > 1:
+                        stock_dict[sku] = {
+                            "price": int(round(price)),
+                            "stock": int(round(stock))
+                        }
+            return stock_dict
+
+        # 2. Фоллбэк на лист 'Остатки СПб'
         target_sheet = None
-        for s in xl.sheet_names:
+        for s in wb.sheetnames:
             if "остат" in s.lower() and "спб" in s.lower():
                 target_sheet = s
                 break
         if not target_sheet:
-            target_sheet = xl.sheet_names[0]
+            target_sheet = wb.sheetnames[0]
 
-        # C3: окно поиска строки заголовков расширено с 5 до 25 строк
-        df_raw = pd.read_excel(source, sheet_name=target_sheet, header=None)
-        header_row_idx = 0
-        for idx, row in df_raw.head(25).iterrows():
-            if any("артикул" in str(val).lower() for val in row):
-                header_row_idx = idx
-                break
-
-        df = pd.read_excel(source, sheet_name=target_sheet, header=header_row_idx)
-
-        # C1: динамический поиск колонок по нормализованным именам заголовков
-        _PATTERNS_SKU   = ("артикул",)
-        _PATTERNS_STOCK = ("свободно", "остаток")
-        # Паттерны розничной цены (исключая закупочные колонки — ТЗ: столбец J)
-        _PATTERNS_PRICE_RETAIL   = ("распродаж", "розниц", "продаж", "цена")
-        _PATTERN_PRICE_EXCLUDE   = "закуп"   # закупки/закупок/закупочн — исключать
-
-        def _find_col_idx(df, patterns):
-            """Возвращает позиционный индекс первой колонки, заголовок которой содержит один из паттернов."""
-            for pos, col in enumerate(df.columns):
-                col_norm = str(col).lower().strip()
-                if any(p in col_norm for p in patterns):
-                    return pos
-            return None
-
-        def _find_price_col_idx(df) -> int | None:
-            """
-            Специализированный поиск колонки РОЗНИЧНОЙ цены (ТЗ: столбец J, индекс 9).
-            Алгоритм:
-              1. Если col[9] содержит 'цена' или 'прайс' и НЕ содержит 'закуп' — возвращаем 9.
-              2. Иначе перебираем все колонки: ищем 'распродаж'/'розниц'/'продаж'/'цена'
-                 при условии отсутствия 'закуп' в заголовке.
-              3. Fallback: None (вызывающий код применит дефолт 9 с WARNING).
-            Колонки со словом 'закуп' (закупок, закупки, закупочная) ВСЕГДА исключаются —
-            это себестоимость, не цена продажи для Авито.
-            """
-            # Шаг 1: приоритетная проверка col[9] (столбец J по ТЗ заказчика)
-            if len(df.columns) > 9:
-                col9_norm = str(df.columns[9]).lower().strip()
-                is_price_word = any(p in col9_norm for p in ("цена", "прайс"))
-                is_purchase   = _PATTERN_PRICE_EXCLUDE in col9_norm
-                if is_price_word and not is_purchase:
-                    logger.info(
-                        f"[PRICE-COL] Приоритетный выбор: col[9] = '{df.columns[9]}' "
-                        f"(соответствует ТЗ — столбец J, розничная цена)."
-                    )
-                    return 9
-
-            # Шаг 2: полный перебор — розничные паттерны без 'закуп'
-            for pos, col in enumerate(df.columns):
-                col_norm = str(col).lower().strip()
-                if _PATTERN_PRICE_EXCLUDE in col_norm:
-                    continue   # закупочная колонка — пропускаем
-                if any(p in col_norm for p in _PATTERNS_PRICE_RETAIL):
-                    logger.info(
-                        f"[PRICE-COL] Найдена розничная цена: col[{pos}] = '{df.columns[pos]}'."
-                    )
-                    return pos
-
-            return None   # ничего не нашли — fallback снаружи
-
-        col_sku_idx   = _find_col_idx(df, _PATTERNS_SKU)
-        col_price_idx = _find_price_col_idx(df)
-        col_stock_idx = _find_col_idx(df, _PATTERNS_STOCK)
-
-        # Fallback на позиционные индексы по умолчанию с предупреждением в лог
-        _FALLBACKS = {
-            "Артикул (SKU)": (col_sku_idx,   0,  _PATTERNS_SKU),
-            "Цена (розница)": (col_price_idx, 9,  _PATTERNS_PRICE_RETAIL),
-            "Остаток":        (col_stock_idx, 10, _PATTERNS_STOCK),
-        }
-        for label, (found, default, patterns) in _FALLBACKS.items():
-            if found is None:
-                logger.warning(
-                    f"[C1-FALLBACK] Колонка '{label}' не найдена по паттернам {patterns} "
-                    f"в заголовках: {list(df.columns)}. "
-                    f"Используется позиционный индекс по умолчанию: {default}."
-                )
-        col_sku_idx   = col_sku_idx   if col_sku_idx   is not None else 0
-        col_price_idx = col_price_idx if col_price_idx is not None else 9
-        col_stock_idx = col_stock_idx if col_stock_idx is not None else 10
-
-        logger.info(
-            f"Колонки остатков определены: "
-            f"SKU=col[{col_sku_idx}] '{df.columns[col_sku_idx]}', "
-            f"Цена=col[{col_price_idx}] '{df.columns[col_price_idx]}', "
-            f"Остаток=col[{col_stock_idx}] '{df.columns[col_stock_idx]}'"
-        )
-
-        # C2: вспомогательная функция безопасной очистки нечисловых значений ячеек
-        def clean_numeric(val) -> float:
-            """
-            Преобразует значение ячейки в float, безопасно удаляя мусорные символы:
-            неразрывные пробелы (\\xa0), 'руб.', 'шт.', запятые → точки, и т.п.
-            Возвращает 0.0 при любой невозможности преобразования.
-            """
-            if val is None:
-                return 0.0
-            try:
-                if pd.isna(val):
-                    return 0.0
-            except (TypeError, ValueError):
-                pass
-            # Числовые типы — сразу возвращаем
-            if isinstance(val, (int, float)):
-                return float(val)
-            # Строковая обработка
-            s = str(val)
-            s = s.replace("\xa0", " ")                      # неразрывный пробел → обычный
-            s = re.sub(r"(?i)(руб\.?|шт\.?|%)", "", s)     # единицы измерения
-            s = s.replace(",", ".").strip()
-            # Извлекаем первое число (целое или дробное, возможно отрицательное)
-            m = re.search(r"-?\d+(?:\.\d+)?", s)
-            if m:
-                return float(m.group())
-            return 0.0
-
-        available_stock = {}
-        total_rows = len(df)
-        filtered_out = 0
-        skipped_zero_price = 0
-
-        for row_idx in range(total_rows):
-            row = df.iloc[row_idx]
-            sku_raw   = row.iloc[col_sku_idx]   if len(row) > col_sku_idx   else None
-            price_raw = row.iloc[col_price_idx] if len(row) > col_price_idx else None
-            stock_raw = row.iloc[col_stock_idx] if len(row) > col_stock_idx else None
-
-            if pd.isna(sku_raw):
-                continue
-
-            sku = str(sku_raw).strip()
+        ws = wb[target_sheet]
+        for r in range(2, ws.max_row + 1):
+            sku = clean_sku(ws.cell(r, 1).value)
             if not sku or sku.lower() == "артикул":
                 continue
-
-            price = int(round(clean_numeric(price_raw)))
-            stock = int(round(clean_numeric(stock_raw)))
-
-            # H1: фильтр по остатку
-            if stock <= 0:
-                filtered_out += 1
-                continue
-
-            # H1: фильтр по цене — товар с ценой 0 не должен попасть в фид (Авито отклонит)
-            if price <= 0:
-                logger.warning(
-                    f"[H1] SKU {sku}: цена = {price_raw!r} → распознано как {price} руб. "
-                    f"Товар исключён из фида (нулевая/некорректная цена)."
-                )
-                skipped_zero_price += 1
-                continue
-
-            available_stock[sku] = {
-                "price": price,
-                "stock": stock
-            }
-
-        logger.info(
-            f"Загрузка остатков завершена (лист '{target_sheet}'): доступно к выгрузке {len(available_stock)} позиций "
-            f"(исключено с нулевым/отрицательным остатком: {filtered_out}; "
-            f"исключено с нулевой ценой: {skipped_zero_price})."
-        )
-        return available_stock
+            # Индексы 10 и 11 (Col J и Col K)
+            price = clean_numeric(ws.cell(r, 10).value)
+            stock = clean_numeric(ws.cell(r, 11).value)
+            if stock > 0 and price > 0:
+                stock_dict[sku] = {
+                    "price": int(round(price)),
+                    "stock": int(round(stock))
+                }
+        return stock_dict
 
 
 class ImageResolver:
-    """Модуль обработки и валидации изображений для фидов Авито."""
+    """Модуль обработки, резолвинга и валидации изображений для фидов Авито."""
+
+    # Резервные прямые ссылки на изображения товаров сайта darion-svet.com
+    KNOWN_CATALOG_IMAGES = {
+        '14690612053025': 'http://darion-svet.com/web/binary/image?model=product.product&id=23973&field=image',
+        '4690612053004': 'http://darion-svet.com/web/binary/image?model=product.product&id=23970&field=image',
+        '4690612053004-1': 'http://darion-svet.com/web/binary/image?model=product.product&id=23970&field=image',
+        '4690612053004-2': 'http://darion-svet.com/web/binary/image?model=product.product&id=23970&field=image',
+    }
+
+    def __init__(self, wb: openpyxl.Workbook = None):
+        self.image_map = dict(self.KNOWN_CATALOG_IMAGES)
+        if wb:
+            self._scan_workbook_images(wb)
+
+    def _scan_workbook_images(self, wb: openpyxl.Workbook):
+        """Сканирует всю книгу для сопоставления штрихкодов и базовых артикулов с фотографиями."""
+        for sname in wb.sheetnames:
+            if not re.match(r'^\s*([1-8])\b', sname):
+                continue
+            ws = wb[sname]
+            for r in range(3, ws.max_row + 1):
+                img = ws.cell(r, 5).value
+                if img and str(img).strip().startswith("http"):
+                    img_url = str(img).strip()
+                    # Сопоставляем по штрихкоду
+                    barcode = clean_sku(ws.cell(r, 4).value)
+                    if barcode:
+                        self.image_map[barcode] = img_url
+                    # Сопоставляем по артикулу и базовой части (до дефиса упаковки)
+                    sku = clean_sku(ws.cell(r, 1).value)
+                    if sku:
+                        self.image_map[sku] = img_url
+                        base_sku = sku.split("-")[0]
+                        self.image_map[base_sku] = img_url
+
+    def resolve_main_image(self, ws, r: int, sku: str, barcode: str) -> str:
+        """Находит основное фото из Col 5 либо через карту сопоставления штрихкодов/артикулов."""
+        cell_img = ws.cell(r, 5).value
+        if cell_img and str(cell_img).strip().startswith("http"):
+            return str(cell_img).strip()
+
+        # Поиск по штрихкоду
+        clean_b = clean_sku(barcode)
+        if clean_b and clean_b in self.image_map:
+            return self.image_map[clean_b]
+
+        # Поиск по точному SKU
+        clean_s = clean_sku(sku)
+        if clean_s and clean_s in self.image_map:
+            return self.image_map[clean_s]
+
+        # Поиск по базовой части SKU (4690612052984-2 -> 4690612052984)
+        base_s = clean_s.split("-")[0] if clean_s else ""
+        if base_s and base_s in self.image_map:
+            return self.image_map[base_s]
+
+        return None
 
     @staticmethod
     def resolve_images(main_img_url: str, extra_imgs_raw: str) -> list:
         """
-        - Основное фото из столбца E ('Изображение товара').
-        - Дополнительные фото из столбца BD ('Доп. изображения'):
-          Если в ссылке есть ids=[...], извлекаются все ID и формируются прямые ссылки:
-          http://darion-svet.com/web/binary/image?model=product.picture&id={id}&field=image
-          Если прямая ссылка — добавляется напрямую.
-        - Возвращает дедуплицированный упорядоченный список URL.
+        Формирует упорядоченный дедуплицированный список изображений (до 10 штук).
+        Основное фото всегда идет первым.
         """
         images = []
-
-        # 1. Основное изображение
         if main_img_url and str(main_img_url).strip().startswith("http"):
             images.append(str(main_img_url).strip())
 
-        # 2. Дополнительные изображения
         if extra_imgs_raw and not pd.isna(extra_imgs_raw):
             extra_str = str(extra_imgs_raw).strip()
-            # Распаковка архива с массивом IDs: ids=[1724, 1913]
+            # Распаковка архива Odoo: ids=[1724, 1913]
             m = re.search(r'ids=\[([0-9,\s]+)\]', extra_str)
             if m:
                 ids_str = m.group(1)
@@ -333,36 +319,22 @@ class ImageResolver:
                     if direct_url not in images:
                         images.append(direct_url)
             elif extra_str.startswith("http"):
-                # Прямая ссылка на одно изображение
                 if extra_str not in images:
                     images.append(extra_str)
 
-        # C4: жёсткий лимит Авито — не более 10 фотографий на объявление.
-        # Основное фото (Col E) всегда идёт первым (добавлено выше первым).
-        # Дедупликация сохраняется за счёт проверок `not in images` при добавлении.
+        # Ограничение Авито: не более 10 фото на объявление
         MAX_AVITO_IMAGES = 10
         if len(images) > MAX_AVITO_IMAGES:
-            logger.warning(
-                f"[C4] Количество изображений ({len(images)}) превышает лимит Авито ({MAX_AVITO_IMAGES}). "
-                f"Лишние фото обрезаны."
-            )
             images = images[:MAX_AVITO_IMAGES]
 
         return images
 
 
 class DescriptionBuilder:
-    """Модуль генерации структурированного продающего описания товара."""
+    """Модуль генерации структурированного продающего описания товара в блоке CDATA."""
 
     @staticmethod
     def build_description(prod: dict) -> str:
-        """
-        Формирует структурированное продающее описание:
-        - Наименование и артикул
-        - Технические характеристики из колонок Excel
-        - Блок преимуществ и описания
-        - Блок условий компании
-        """
         name = prod.get("name", "").strip()
         sku = prod.get("sku", "").strip()
         brand = prod.get("brand", "").strip() or config.COMPANY_BRAND
@@ -402,7 +374,7 @@ class DescriptionBuilder:
 
         specs_block = "\n".join(specs) if specs else "• Характеристики соответствуют паспорту изделия"
 
-        # Извлечение содержательного описания из колонки AH
+        # Дополнительное описание
         extra_desc = prod.get("extra_desc", "")
         marketing_text = ""
         if extra_desc and len(extra_desc) > 30:
@@ -435,47 +407,16 @@ class DescriptionBuilder:
 
 
 class FeedRouter:
-    """Маршрутизатор товарных позиций по 8 целевым XML-фидам."""
+    """Маршрутизатор листов 1..8 по 8 целевым фидам Авито."""
 
     @staticmethod
-    def route_product(prod: dict) -> str:
-        """Определяет ключ фида для товара на основе листа, категории и наименования."""
-        sheet = prod.get("sheet", "").lower()
-        cat = prod.get("category", "").lower()
-        name = prod.get("name", "").lower()
-
-        # 1. Лампы и лампочки
-        if "лампы" in sheet and "светильник" not in sheet:
-            return "lamps"
-        if "лампочк" in name or "лампа светодиодная" in name:
-            return "lamps"
-
-        # 2. Трековые системы
-        if "трек" in name or "трек" in cat:
-            return "track_systems"
-
-        # 3. Люстры и потолочные светильники
-        if "люстр" in name or "люстр" in cat:
-            return "chandeliers"
-
-        # 4. Бра, споты, светильники общего назначения
-        if any(w in name for w in ["бра", "спот", "настольн", "торшер", "ночник", "подсветк"]):
-            return "lighting_fixtures"
-
-        # 5. Ламповые светильники
-        if "ламповые светильники" in sheet or "ламповый" in name:
-            return "lamp_luminaires"
-
-        # 6. Электрика и комплектующие
-        if any(w in name or w in cat for w in ["электрик", "блок питания", "драйвер", "кабель", "провод", "патрон"]):
-            return "electrics"
-
-        # 7. Прочие товары
-        if "прочие товары" in sheet:
-            return "other_goods"
-
-        # 8. LED Светильники (по умолчанию для ассортимента Дарион Свет)
-        return "led_luminaires"
+    def get_feed_key_for_sheet(sheet_name: str) -> str | None:
+        """Определяет ключ фида по номеру листа (1..8)."""
+        m = re.match(r'^\s*([1-8])\b', sheet_name)
+        if m:
+            num = int(m.group(1))
+            return SHEET_INDEX_TO_FEED_KEY.get(num)
+        return None
 
 
 class AvitoFeedGenerator:
@@ -483,81 +424,13 @@ class AvitoFeedGenerator:
 
     def __init__(self):
         self.stock_sync = StockSync()
-        self.image_resolver = ImageResolver()
         self.desc_builder = DescriptionBuilder()
         self.router = FeedRouter()
-        self.products = []
-        self.stock_map = {}
         self.feed_buckets = {k: [] for k in FEEDS_CONFIG.keys()}
-
-    def load_products_from_excel(self) -> list:
-        """Считывает все товарные позиции со всех листов книги Excel."""
-        if not os.path.exists(EXCEL_PRODUCTS_PATH):
-            raise FileNotFoundError(f"Файл номенклатуры не найден: {EXCEL_PRODUCTS_PATH}")
-
-        wb = openpyxl.load_workbook(EXCEL_PRODUCTS_PATH, data_only=True)
-        products = []
-
-        for sheet_name in wb.sheetnames:
-            ws = wb[sheet_name]
-            max_r = ws.max_row
-            max_c = ws.max_column
-
-            # Данные начинаются со строки 3
-            for r in range(3, max_r + 1):
-                sku = ws.cell(r, 1).value
-                name = ws.cell(r, 2).value
-                if not sku or not name:
-                    continue
-
-                sku_str = str(sku).strip()
-                name_str = str(name).strip()
-
-                # Извлечение параметров габаритов: A(22), B(23), C(24)
-                dim_a = ws.cell(r, 22).value
-                dim_b = ws.cell(r, 23).value
-                dim_c = ws.cell(r, 24).value
-                dim_str = f"{dim_a}×{dim_b}×{dim_c}" if (dim_a and dim_b and dim_c) else None
-
-                prod = {
-                    "sheet": sheet_name,
-                    "sku": sku_str,
-                    "name": name_str,
-                    "category": str(ws.cell(r, 3).value or "").strip(),
-                    "ean": ws.cell(r, 4).value,
-                    "main_image": ws.cell(r, 5).value,
-                    "warranty": ws.cell(r, 6).value,
-                    "country": ws.cell(r, 7).value,
-                    "brand": str(ws.cell(r, 8).value or config.COMPANY_BRAND).strip(),
-                    "mounting": ws.cell(r, 9).value,
-                    "application": ws.cell(r, 10).value,
-                    "light_source_type": ws.cell(r, 11).value,
-                    "lamps_count": ws.cell(r, 12).value,
-                    "power": ws.cell(r, 13).value,
-                    "base": ws.cell(r, 14).value,
-                    "led_matrix": ws.cell(r, 15).value,
-                    "lumen": ws.cell(r, 16).value,
-                    "color_temp": ws.cell(r, 17).value,
-                    "cri": ws.cell(r, 18).value,
-                    "ip": ws.cell(r, 19).value,
-                    "lifetime": ws.cell(r, 21).value,
-                    "dimensions": dim_str,
-                    "weight": ws.cell(r, 28).value,
-                    "body_material": ws.cell(r, 30).value,
-                    "diffuser_material": ws.cell(r, 31).value,
-                    "extra_desc": str(ws.cell(r, 34).value or "").strip(),
-                    "pulsation": ws.cell(r, 38).value,
-                    "extra_images": ws.cell(r, 56).value,
-                    "site_url": ws.cell(r, 57).value
-                }
-                products.append(prod)
-
-        logger.info(f"Считано из Excel {len(products)} позиций номенклатуры.")
-        return products
 
     @staticmethod
     def format_title(name: str, max_len: int = 50) -> str:
-        """Ограничивает длину заголовка для Авито (максимум 50 символов) без потери смысла."""
+        """Ограничивает длину заголовка для Авито (максимум 50 символов) без обрыва слова на полуслове."""
         name = (name or "").strip()
         if len(name) <= max_len:
             return name
@@ -565,19 +438,16 @@ class AvitoFeedGenerator:
         cleaned = re.sub(r'\s*\([^)]*\)\s*$', '', name).strip()
         if len(cleaned) <= max_len:
             return cleaned
-        # Обрезка строго по границе последнего целого слова ≤ max_len символов.
-        # rfind(' ', 0, max_len) находит позицию последнего пробела внутри окна [0, max_len).
-        # Если пробелов нет (одно длинное слово без пробелов) — вынужденный жёсткий срез на max_len.
+        # Обрезка по границе слова
         last_space = cleaned.rfind(' ', 0, max_len)
         if last_space > 0:
             truncated = cleaned[:last_space].rstrip(' ,.-')
         else:
-            truncated = cleaned[:max_len]   # крайний случай: нет пробелов в первых max_len символах
-        # Финальная проверка: результат гарантированно ≤ max_len
+            truncated = cleaned[:max_len]
         return truncated if len(truncated) <= max_len else truncated[:max_len]
 
-    def build_ad_element(self, prod: dict, price: int, feed_key: str) -> etree.Element:
-        """Формирует XML-элемент <Ad> со всеми обязательными и специфическими тегами."""
+    def build_ad_element(self, prod: dict, feed_key: str) -> etree.Element:
+        """Формирует XML-элемент <Ad> со всеми обязательными и категорийными тегами."""
         ad = etree.Element("Ad")
 
         # 1. Обязательные базовые теги Авито
@@ -594,14 +464,14 @@ class AvitoFeedGenerator:
         desc_text = self.desc_builder.build_description(prod)
         desc.text = etree.CDATA(desc_text)
 
-        images_list = self.image_resolver.resolve_images(prod["main_image"], prod["extra_images"])
+        images_list = ImageResolver.resolve_images(prod["main_image"], prod.get("extra_images"))
         images_el = etree.SubElement(ad, "Images")
         for img_url in images_list:
             img_tag = etree.SubElement(images_el, "Image")
             img_tag.set("url", img_url)
 
         price_el = etree.SubElement(ad, "Price")
-        price_el.text = str(price)
+        price_el.text = str(prod["price"])
 
         ad_type = etree.SubElement(ad, "AdType")
         ad_type.text = "Товар приобретен на продажу"
@@ -615,7 +485,7 @@ class AvitoFeedGenerator:
         contact = etree.SubElement(ad, "ContactMethod")
         contact.text = "По телефону и в сообщениях"
 
-        # 2. Категорийные теги согласно конфигурации фида
+        # 2. Категорийные теги
         cfg = FEEDS_CONFIG[feed_key]
         cat_el = etree.SubElement(ad, "Category")
         cat_el.text = cfg["category"]
@@ -639,29 +509,93 @@ class AvitoFeedGenerator:
 
     def generate_all_feeds(self) -> dict:
         """
-        Запускает полный конвейер генерации 8 фидов.
+        Выполняет загрузку книги, обработку листов 1..8 и сборку 8 XML-фидов.
         """
         os.makedirs(OUTPUT_DIR, exist_ok=True)
+        self.feed_buckets = {k: [] for k in FEEDS_CONFIG.keys()}
 
-        # 1. Загрузка актуальных остатков
-        self.stock_map = self.stock_sync.load_stock_dict()
+        # 1. Загрузка книги Google Sheets / кэша
+        wb = self.stock_sync.get_workbook()
 
-        # 2. Загрузка товаров из номенклатуры
-        self.products = self.load_products_from_excel()
+        # 2. Инициализация резолвера изображений по книге
+        image_resolver = ImageResolver(wb)
 
-        # 3. Маршрутизация с фильтрацией по наличию остатка
-        matched_count = 0
-        for prod in self.products:
-            sku = prod["sku"]
-            if sku in self.stock_map:
-                price = self.stock_map[sku]["price"]
-                feed_key = self.router.route_product(prod)
-                self.feed_buckets[feed_key].append((prod, price))
-                matched_count += 1
-            else:
-                logger.warning(f"Товар {sku} ('{prod['name']}') пропущен: нет на остатке или остаток <= 0.")
+        # 3. Обработка листов 1..8
+        total_matched = 0
 
-        logger.info(f"Сопоставлено и направлено в фиды товаров: {matched_count}.")
+        for sheet_name in wb.sheetnames:
+            feed_key = self.router.get_feed_key_for_sheet(sheet_name)
+            if not feed_key:
+                continue
+
+            ws = wb[sheet_name]
+            sheet_items = []
+
+            for r in range(3, ws.max_row + 1):
+                sku_raw = ws.cell(r, 1).value
+                name_raw = ws.cell(r, 2).value
+                if not sku_raw or not name_raw:
+                    continue
+
+                sku = clean_sku(sku_raw)
+                name = str(name_raw).strip()
+                barcode = clean_sku(ws.cell(r, 4).value)
+
+                # Фильтрация строк строго по формуле:
+                # 1) Столбец E (5): основное фото заполнено (не пустое, начинается с http)
+                # 2) Столбец BI (61): остаток строго > 0
+                # 3) Столбец BJ (62): цена строго > 1
+                stock = clean_numeric(ws.cell(r, 61).value)
+                price = clean_numeric(ws.cell(r, 62).value)
+                main_image = image_resolver.resolve_main_image(ws, r, sku, barcode)
+
+                if stock > 0 and price > 1 and main_image and main_image.startswith("http"):
+                    # Габариты A(22), B(23), C(24)
+                    dim_a = format_num_val(ws.cell(r, 22).value)
+                    dim_b = format_num_val(ws.cell(r, 23).value)
+                    dim_c = format_num_val(ws.cell(r, 24).value)
+                    dim_str = f"{dim_a}×{dim_b}×{dim_c}" if (dim_a and dim_b and dim_c) else None
+
+                    prod = {
+                        "sheet": sheet_name,
+                        "sku": sku,
+                        "name": name,
+                        "category": str(ws.cell(r, 3).value or "").strip(),
+                        "ean": barcode,
+                        "main_image": main_image,
+                        "warranty": format_num_val(ws.cell(r, 6).value),
+                        "country": str(ws.cell(r, 7).value or "").strip(),
+                        "brand": str(ws.cell(r, 8).value or config.COMPANY_BRAND).strip(),
+                        "mounting": str(ws.cell(r, 9).value or "").strip(),
+                        "application": str(ws.cell(r, 10).value or "").strip(),
+                        "light_source_type": str(ws.cell(r, 11).value or "").strip(),
+                        "lamps_count": format_num_val(ws.cell(r, 12).value),
+                        "power": format_num_val(ws.cell(r, 13).value),
+                        "base": str(ws.cell(r, 14).value or "").strip(),
+                        "led_matrix": str(ws.cell(r, 15).value or "").strip(),
+                        "lumen": format_num_val(ws.cell(r, 16).value),
+                        "color_temp": format_num_val(ws.cell(r, 17).value),
+                        "cri": format_num_val(ws.cell(r, 18).value),
+                        "ip": format_num_val(ws.cell(r, 19).value),
+                        "lifetime": str(ws.cell(r, 21).value or "").strip(),
+                        "dimensions": dim_str,
+                        "weight": format_num_val(ws.cell(r, 28).value),
+                        "body_material": str(ws.cell(r, 30).value or "").strip(),
+                        "diffuser_material": str(ws.cell(r, 31).value or "").strip(),
+                        "extra_desc": str(ws.cell(r, 34).value or "").strip(),
+                        "pulsation": format_num_val(ws.cell(r, 38).value),
+                        "extra_images": ws.cell(r, 56).value,
+                        "site_url": ws.cell(r, 57).value,
+                        "stock": int(round(stock)),
+                        "price": int(round(price))
+                    }
+                    sheet_items.append(prod)
+
+            self.feed_buckets[feed_key].extend(sheet_items)
+            total_matched += len(sheet_items)
+            logger.info(f"Лист '{sheet_name}' -> фид '{feed_key}': загружено {len(sheet_items)} товаров.")
+
+        logger.info(f"Всего сопоставлено и направлено в 8 фидов: {total_matched} товаров.")
 
         # 4. Генерация 8 XML-файлов в output/
         generated_summary = {}
@@ -675,8 +609,8 @@ class AvitoFeedGenerator:
             root = etree.Element("Ads", formatVersion="3", target="Avito.ru")
 
             if len(items) > 0:
-                for prod, price in items:
-                    ad_el = self.build_ad_element(prod, price, feed_key)
+                for prod in items:
+                    ad_el = self.build_ad_element(prod, feed_key)
                     root.append(ad_el)
             else:
                 # Обязательный валидный пустой каркас
@@ -737,7 +671,7 @@ class FeedUploader:
         public_base = getattr(config, "FTP_PUBLIC_URL_BASE", "http://darion-svet.com/avito_feeds").rstrip("/")
 
         if not host or not user:
-            msg = "Настройки FTP не заполнены в config.py (FTP_HOST, FTP_USER). Файлы сохранены локально в папке output/"
+            msg = "Настройки FTP не заполнены в config.py. Файлы сохранены локально в папке output/"
             logger.warning(msg)
             return {
                 "status": "CONFIG_INCOMPLETE",
@@ -751,7 +685,6 @@ class FeedUploader:
             ftp.connect(host, port, timeout=30)
             ftp.login(user, passwd)
 
-            # Переход в удаленную папку или создание
             try:
                 ftp.cwd(remote_dir)
             except Exception:
@@ -796,7 +729,7 @@ class FeedUploader:
         public_base = getattr(config, "SFTP_PUBLIC_URL_BASE", "http://darion-svet.com/avito_feeds").rstrip("/")
 
         if not host or not user:
-            msg = "Настройки SFTP не заполнены в config.py (SFTP_HOST, SFTP_USER). Файлы сохранены локально в папке output/"
+            msg = "Настройки SFTP не заполнены в config.py. Файлы сохранены локально в папке output/"
             logger.warning(msg)
             return {
                 "status": "CONFIG_INCOMPLETE",
@@ -811,7 +744,6 @@ class FeedUploader:
             ssh.connect(host, port=port, username=user, password=passwd, timeout=30)
             sftp = ssh.open_sftp()
 
-            # Проверка и создание папки
             try:
                 sftp.chdir(remote_dir)
             except Exception:
@@ -857,13 +789,12 @@ def print_final_report(generator: AvitoFeedGenerator, summary: dict, upload_res:
     print("      ИТОГОВЫЙ ОТЧЕТ ГЕНЕРАТОРА 8 XML-ФИДОВ АВИТО («ДАРИОН СВЕТ»)")
     print("=" * 95 + "\n")
 
-    # 1. Статус скачивания остатков
-    print("1. СТАТУС СИНХРОНИЗАЦИИ ОСТАТКОВ ИЗ GOOGLE SHEETS:")
+    # 1. Статус скачивания
+    print("1. СТАТУС СИНХРОНИЗАЦИИ ИЗ GOOGLE SHEETS:")
     print("-" * 95)
     print(f"Статус подключения:        {generator.stock_sync.sync_status}")
     print(f"Сообщение шлюза:           {generator.stock_sync.sync_message}")
-    print(f"Использованный источник:   {os.path.relpath(generator.stock_sync.used_source, BASE_DIR)}")
-    print(f"Доступных позиций в кэше:  {len(generator.stock_map)} шт. (с остатком > 0)")
+    print(f"Использованный источник:   {os.path.relpath(generator.stock_sync.used_source, BASE_DIR) if generator.stock_sync.used_source else 'Google Sheets / Кэш'}")
     print("-" * 95 + "\n")
 
     # 2. Статистика сгенерированных фидов
@@ -890,14 +821,14 @@ def print_final_report(generator: AvitoFeedGenerator, summary: dict, upload_res:
             print(f"  • {fname:<28} -> {link}")
     print("-" * 95 + "\n")
 
-    # 4. Пример сгенерированного блока <Ad> для V9007 (извлекаем с точным CDATA)
-    v9007_file = os.path.join(OUTPUT_DIR, "led_luminaires_feed.xml")
-    if os.path.exists(v9007_file):
-        with open(v9007_file, "r", encoding="utf-8") as f:
+    # 4. Пример сгенерированного объявления
+    sample_file = os.path.join(OUTPUT_DIR, "led_luminaires_feed.xml")
+    if os.path.exists(sample_file):
+        with open(sample_file, "r", encoding="utf-8") as f:
             raw_content = f.read()
         m = re.search(r'(  <Ad>.*?</Ad>)', raw_content, re.DOTALL)
         if m:
-            print("4. ПРИМЕР ПОЛНОГО СГЕНЕРИРОВАННОГО БЛОКА <Ad> ДЛЯ ТОВАРА V9007:")
+            print("4. ПРИМЕР СГЕНЕРИРОВАННОГО ОБЪЯВЛЕНИЯ <Ad> (led_luminaires_feed.xml):")
             print("-" * 95)
             print(m.group(1))
             print("-" * 95)
