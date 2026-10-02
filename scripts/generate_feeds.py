@@ -487,8 +487,12 @@ class AvitoFeedGenerator:
 
         # 2. Категорийные теги
         cfg = FEEDS_CONFIG[feed_key]
+        cat_val = cfg["category"]
+        if cat_val == "Для дома и дачи":
+            cat_val = "Мебель и интерьер"
+
         cat_el = etree.SubElement(ad, "Category")
-        cat_el.text = cfg["category"]
+        cat_el.text = cat_val
 
         goods_type_el = etree.SubElement(ad, "GoodsType")
         goods_type_el.text = cfg["goods_type"]

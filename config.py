@@ -60,57 +60,58 @@ COMPANY_BRAND = "VIRONA"
 DEFAULT_ADDRESS = "Санкт-Петербург, Студенческая ул., 10"
 
 # Конфигурация 8 целевых фидов Авито
+# Схема категорий Авито XML v.3:
+# Раздел сайта «Для дома и дачи» в XML не используется.
+# Верхний тег <Category>: «Мебель и интерьер» (для светотехники) или «Ремонт и строительство» (для электрики).
+# Подкатегория <GoodsType>: «Освещение» (для светотехники) или «Электрика» (для электрики).
+# Подтип <GoodsSubType>: «Потолочные светильники», «Уличное освещение», «Лампочки», «Светильники» и т.д.
 FEEDS_CONFIG = {
     "led_luminaires": {
         "filename": "led_luminaires_feed.xml",
-        "title": "LED светильники (промышленные, уличные, универсальные)",
-        "category": "Для дома и дачи",
-        "goods_type": "Мебель и интерьер",
-        "goods_sub_type": "Освещение",
+        "title": "LED светильники (промышленные, потолочные, настенные)",
+        "category": "Мебель и интерьер",
+        "goods_type": "Освещение",
+        "goods_sub_type": "Потолочные светильники",
         "template": "led_luminaires.xml"
     },
     "track_systems": {
         "filename": "track_systems_feed.xml",
-        "title": "Трековые системы освещения",
-        "category": "Для дома и дачи",
-        "goods_type": "Мебель и интерьер",
-        "goods_sub_type": "Освещение",
-        "lighting_type": "Трековые системы",
+        "title": "Уличное освещение (консольные, уличные светильники)",
+        "category": "Мебель и интерьер",
+        "goods_type": "Освещение",
+        "goods_sub_type": "Уличное освещение",
         "template": "track_systems.xml"
     },
     "chandeliers": {
         "filename": "chandeliers_feed.xml",
         "title": "Люстры и потолочные светильники",
-        "category": "Для дома и дачи",
-        "goods_type": "Мебель и интерьер",
-        "goods_sub_type": "Освещение",
-        "lighting_type": "Потолочные светильники",
+        "category": "Мебель и интерьер",
+        "goods_type": "Освещение",
+        "goods_sub_type": "Потолочные светильники",
         "template": "chandeliers.xml"
     },
     "lamps": {
         "filename": "lamps_feed.xml",
         "title": "Лампы и лампочки",
-        "category": "Для дома и дачи",
-        "goods_type": "Мебель и интерьер",
-        "goods_sub_type": "Освещение",
-        "lighting_type": "Лампочки",
+        "category": "Мебель и интерьер",
+        "goods_type": "Освещение",
+        "goods_sub_type": "Лампочки",
         "template": "lamps.xml"
     },
     "lighting_fixtures": {
         "filename": "lighting_fixtures_feed.xml",
         "title": "Светильники общего назначения (Бра, Споты)",
-        "category": "Для дома и дачи",
-        "goods_type": "Мебель и интерьер",
-        "goods_sub_type": "Освещение",
-        "lighting_type": "Светильники",
+        "category": "Мебель и интерьер",
+        "goods_type": "Освещение",
+        "goods_sub_type": "Светильники",
         "template": "lighting_fixtures.xml"
     },
     "lamp_luminaires": {
         "filename": "lamp_luminaires_feed.xml",
         "title": "Ламповые светильники",
-        "category": "Для дома и дачи",
-        "goods_type": "Мебель и интерьер",
-        "goods_sub_type": "Освещение",
+        "category": "Мебель и интерьер",
+        "goods_type": "Освещение",
+        "goods_sub_type": "Светильники",
         "template": "lamp_luminaires.xml"
     },
     "electrics": {
@@ -124,8 +125,9 @@ FEEDS_CONFIG = {
     "other_goods": {
         "filename": "other_goods_feed.xml",
         "title": "Прочие товары / Торговое оборудование",
-        "category": "Для дома и дачи",
-        "goods_type": "Мебель и интерьер",
+        "category": "Мебель и интерьер",
+        "goods_type": "Освещение",
+        "goods_sub_type": "Другое",
         "template": "other_goods.xml"
     }
 }
