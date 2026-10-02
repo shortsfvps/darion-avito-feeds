@@ -71,7 +71,8 @@ FEEDS_CONFIG = {
         "title": "LED светильники (промышленные, потолочные, настенные)",
         "category": "Мебель и интерьер",
         "goods_type": "Освещение",
-        "goods_sub_type": "Потолочные светильники",
+        "goods_sub_type": "Потолочное и настенное",
+        "lighting_type": "Люстры и потолочные светильники",
         "template": "led_luminaires.xml"
     },
     "track_systems": {
@@ -79,7 +80,7 @@ FEEDS_CONFIG = {
         "title": "Уличное освещение (консольные, уличные светильники)",
         "category": "Мебель и интерьер",
         "goods_type": "Освещение",
-        "goods_sub_type": "Уличное освещение",
+        "goods_sub_type": "Уличное",
         "template": "track_systems.xml"
     },
     "chandeliers": {
@@ -87,7 +88,7 @@ FEEDS_CONFIG = {
         "title": "Люстры и потолочные светильники",
         "category": "Мебель и интерьер",
         "goods_type": "Освещение",
-        "goods_sub_type": "Потолочные светильники",
+        "goods_sub_type": "Люстры и потолочные светильники",
         "template": "chandeliers.xml"
     },
     "lamps": {

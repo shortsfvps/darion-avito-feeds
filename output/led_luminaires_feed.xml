@@ -36,13 +36,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=23969&amp;field=image"/>
     </Images>
     <Price>1540</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -81,13 +85,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25910&amp;field=image"/>
     </Images>
     <Price>1743</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -126,13 +134,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25912&amp;field=image"/>
     </Images>
     <Price>1779</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -170,13 +182,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25915&amp;field=image"/>
     </Images>
     <Price>2055</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -214,13 +230,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25916&amp;field=image"/>
     </Images>
     <Price>3866</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -258,13 +278,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25901&amp;field=image"/>
     </Images>
     <Price>1710</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -302,13 +326,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=23973&amp;field=image"/>
     </Images>
     <Price>1766</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -350,13 +378,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25947&amp;field=image"/>
     </Images>
     <Price>484</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -398,13 +430,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=24183&amp;field=image"/>
     </Images>
     <Price>491</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -442,13 +478,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25874&amp;field=image"/>
     </Images>
     <Price>985</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -490,13 +530,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=24161&amp;field=image"/>
     </Images>
     <Price>420</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -534,13 +578,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25875&amp;field=image"/>
     </Images>
     <Price>824</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -582,13 +630,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=24162&amp;field=image"/>
     </Images>
     <Price>431</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -626,13 +678,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25876&amp;field=image"/>
     </Images>
     <Price>758</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -670,13 +726,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25836&amp;field=image"/>
     </Images>
     <Price>443</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -714,13 +774,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25838&amp;field=image"/>
     </Images>
     <Price>417</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -758,13 +822,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25881&amp;field=image"/>
     </Images>
     <Price>918</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -802,13 +870,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25840&amp;field=image"/>
     </Images>
     <Price>688</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -846,13 +918,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25840&amp;field=image"/>
     </Images>
     <Price>1290</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -890,13 +966,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25841&amp;field=image"/>
     </Images>
     <Price>559</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -934,13 +1014,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25884&amp;field=image"/>
     </Images>
     <Price>1086</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -978,13 +1062,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=23970&amp;field=image"/>
     </Images>
     <Price>629</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -1022,13 +1110,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=23970&amp;field=image"/>
     </Images>
     <Price>1220</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -1066,13 +1158,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25843&amp;field=image"/>
     </Images>
     <Price>456</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -1110,13 +1206,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25843&amp;field=image"/>
     </Images>
     <Price>880</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -1154,13 +1254,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25887&amp;field=image"/>
     </Images>
     <Price>486</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
   <Ad>
@@ -1198,13 +1302,17 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=25887&amp;field=image"/>
     </Images>
     <Price>964</Price>
-    <AdType>Товар приобретен на продажу</AdType>
+    <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
     <ContactMethod>По телефону и в сообщениях</ContactMethod>
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
-    <GoodsSubType>Потолочные светильники</GoodsSubType>
+    <GoodsSubType>Потолочное и настенное</GoodsSubType>
+    <LigitingType>Люстры и потолочные светильники</LigitingType>
+    <ChandelierType>Светильник</ChandelierType>
+    <ChandelierMountingType>Потолочное</ChandelierMountingType>
+    <LedLamp>Да</LedLamp>
     <Brand>NEOX</Brand>
   </Ad>
 </Ads>

@@ -474,7 +474,7 @@ class AvitoFeedGenerator:
         price_el.text = str(prod["price"])
 
         ad_type = etree.SubElement(ad, "AdType")
-        ad_type.text = "Товар приобретен на продажу"
+        ad_type.text = "Товар куплен на продажу"
 
         condition = etree.SubElement(ad, "Condition")
         condition.text = "Новое"
@@ -497,13 +497,42 @@ class AvitoFeedGenerator:
         goods_type_el = etree.SubElement(ad, "GoodsType")
         goods_type_el.text = cfg["goods_type"]
 
-        if cfg.get("goods_sub_type"):
-            sub_type_el = etree.SubElement(ad, "GoodsSubType")
-            sub_type_el.text = cfg["goods_sub_type"]
+        # GoodsSubType: строго по официальному дереву категорий Авито
+        if feed_key == "led_luminaires":
+            goods_sub_type = "Потолочное и настенное"
+        elif feed_key == "track_systems":
+            goods_sub_type = "Уличное"
+        else:
+            goods_sub_type = cfg.get("goods_sub_type")
 
-        if cfg.get("lighting_type"):
+        if goods_sub_type:
+            sub_type_el = etree.SubElement(ad, "GoodsSubType")
+            sub_type_el.text = goods_sub_type
+
+        # LigitingType (внимание: специфическая схема тега Авито без буквы 'h')
+        lighting_type = "Люстры и потолочные светильники" if feed_key == "led_luminaires" else cfg.get("lighting_type")
+        if lighting_type:
             light_type_el = etree.SubElement(ad, "LigitingType")
-            light_type_el.text = cfg["lighting_type"]
+            light_type_el.text = lighting_type
+
+        # Обязательные характеристики для подтипа «Люстры и потолочные светильники»
+        if feed_key in ("led_luminaires", "chandeliers") or lighting_type == "Люстры и потолочные светильники":
+            # 1. Подтип потолочного освещения (Светильник / Люстра)
+            chan_type_el = etree.SubElement(ad, "ChandelierType")
+            chan_type_el.text = "Светильник"
+
+            # 2. Тип крепления (допустимые значения Авито: "Потолочное" / "Подвесное")
+            mounting_raw = str(prod.get("mounting") or "").lower()
+            if "подвес" in mounting_raw and not ("потолоч" in mounting_raw or "встраива" in mounting_raw or "накладн" in mounting_raw):
+                mounting_val = "Подвесное"
+            else:
+                mounting_val = "Потолочное"
+            mount_el = etree.SubElement(ad, "ChandelierMountingType")
+            mount_el.text = mounting_val
+
+            # 3. Светодиодный (LED) (Да / Нет)
+            led_el = etree.SubElement(ad, "LedLamp")
+            led_el.text = "Да"
 
         if prod.get("brand"):
             brand_el = etree.SubElement(ad, "Brand")
