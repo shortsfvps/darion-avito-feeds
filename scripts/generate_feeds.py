@@ -374,27 +374,13 @@ class DescriptionBuilder:
 
         specs_block = "\n".join(specs) if specs else "• Характеристики соответствуют паспорту изделия"
 
-        # Дополнительное описание
-        extra_desc = prod.get("extra_desc", "")
-        marketing_text = ""
-        if extra_desc and len(extra_desc) > 30:
-            paragraphs = [p.strip() for p in extra_desc.split("\n\n") if p.strip()]
-            meaningful = [
-                p for p in paragraphs
-                if p.lower() != name.lower() and not p.lower().startswith(name.lower()[:20])
-            ]
-            if meaningful:
-                summary_p = meaningful[0]
-                marketing_text = f"\n[ОПИСАНИЕ И ПРЕИМУЩЕСТВА]\n{summary_p}\n"
+        # Полное продающее описание из столбца AH (34) без обрезки текста
+        extra_desc = str(prod.get("extra_desc") or "").strip()
+        marketing_block = ""
+        if extra_desc:
+            marketing_block = f"\n\n[ОПИСАНИЕ И ПРЕИМУЩЕСТВА]\n{extra_desc}"
 
-        description_text = f"""{name}
-Артикул: {sku}
-Производитель: {brand}
-
-[ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ]
-{specs_block}
-{marketing_text}
-[ПРЕИМУЩЕСТВА И УСЛОВИЯ КОМПАНИИ «ДАРИОН СВЕТ»]
+        company_block = """[ПРЕИМУЩЕСТВА И УСЛОВИЯ КОМПАНИИ «ДАРИОН СВЕТ»]
 - Официальная гарантия производителя на всю светотехнику.
 - Быстрая отгрузка со склада в Санкт-Петербурге.
 - Работаем с юр. и физ. лицами (оплата по счету с НДС 20% и без НДС).
@@ -403,7 +389,15 @@ class DescriptionBuilder:
 
 Звоните или пишите в сообщения на Авито — рассчитаем освещенность объекта и подберем необходимое оборудование!"""
 
-        return description_text.strip()
+        header_block = f"{name}\nАртикул: {sku}\nПроизводитель: {brand}\n\n[ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ]\n{specs_block}"
+
+        description_text = f"{header_block}{marketing_block}\n\n{company_block}".strip()
+
+        # Системный контроль: суммарная длина тега Description <= 5000 символов (лимит Авито)
+        if len(description_text) > 5000:
+            description_text = description_text[:5000].rstrip(' ,.-;/')
+
+        return description_text
 
 
 class FeedRouter:
@@ -429,22 +423,33 @@ class AvitoFeedGenerator:
         self.feed_buckets = {k: [] for k in FEEDS_CONFIG.keys()}
 
     @staticmethod
-    def format_title(name: str, max_len: int = 50) -> str:
-        """Ограничивает длину заголовка для Авито (максимум 50 символов) без обрыва слова на полуслове."""
+    def format_title(name: str, sku: str = "", max_len: int = 50) -> str:
+        """
+        Формирует заголовок объявления для Авито в формате «[Название] ([Артикул])».
+        Общая длина строки СТРОГО <= max_len (по умолчанию 50 символов).
+        Базовое наименование аккуратно обрезается по границе слов без висячих знаков пунктуации.
+        """
         name = (name or "").strip()
-        if len(name) <= max_len:
-            return name
-        # Удаляем хвостовые скобки с артикулами (VRN-UNE-48-G40K67-U)
-        cleaned = re.sub(r'\s*\([^)]*\)\s*$', '', name).strip()
-        if len(cleaned) <= max_len:
-            return cleaned
-        # Обрезка по границе слова
-        last_space = cleaned.rfind(' ', 0, max_len)
-        if last_space > 0:
-            truncated = cleaned[:last_space].rstrip(' ,.-')
+        sku = (sku or "").strip()
+
+        # Удаляем хвостовые скобки с артикулами (VRN-UNE-48-G40K67-U) или упаковкой
+        cleaned = re.sub(r'\s*\([^)]*\)\s*$', '', name).strip() or name
+        suffix = f" ({sku})" if sku else ""
+        avail = max_len - len(suffix)
+        if avail <= 0:
+            return (cleaned + suffix)[:max_len]
+
+        if len(cleaned) <= avail:
+            base = cleaned
         else:
-            truncated = cleaned[:max_len]
-        return truncated if len(truncated) <= max_len else truncated[:max_len]
+            if len(cleaned) > avail and cleaned[avail] == ' ':
+                base = cleaned[:avail].rstrip(' ,.-;/')
+            else:
+                sp = cleaned.rfind(' ', 0, avail)
+                base = cleaned[:sp].rstrip(' ,.-;/') if sp > 0 else cleaned[:avail].rstrip(' ,.-;/')
+
+        t = f"{base}{suffix}".strip()
+        return t[:max_len].rstrip(' ,.-;/') if len(t) > max_len else t
 
     def build_ad_element(self, prod: dict, feed_key: str) -> etree.Element:
         """Формирует XML-элемент <Ad> со всеми обязательными и категорийными тегами."""
@@ -458,7 +463,7 @@ class AvitoFeedGenerator:
         address.text = getattr(config, "DEFAULT_ADDRESS", "Санкт-Петербург, Студенческая ул., 10")
 
         title = etree.SubElement(ad, "Title")
-        title.text = self.format_title(prod["name"], max_len=50)
+        title.text = self.format_title(prod["name"], prod["sku"], max_len=50)
 
         desc = etree.SubElement(ad, "Description")
         desc_text = self.desc_builder.build_description(prod)

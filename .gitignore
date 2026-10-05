@@ -1,0 +1,5 @@
+.review-base
+__pycache__/
+*.pyc
+*.log
+.env
