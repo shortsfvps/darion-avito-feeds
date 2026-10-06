@@ -409,7 +409,7 @@ class DescriptionBuilder:
         # Колонка R (18) «Индекс цветопередачи»
         if cls._is_valid(prod.get("cri")):
             cri_val = str(prod["cri"]).strip()
-            cri_str = cri_val if cri_val.lower().startswith("ra") else f"Ra ≥ {cri_val}"
+            cri_str = cri_val if cri_val.lower().startswith("ra") else f"Ra {cri_val}"
             specs.append(f"• Индекс цветопередачи: {cri_str}")
 
         # Коэффициент пульсации (Колонка AL / 38)
@@ -605,7 +605,9 @@ class AvitoFeedGenerator:
             sub_type_el.text = goods_sub_type
 
         # LigitingType (внимание: специфическая схема тега Авито без буквы 'h')
-        lighting_type = "Люстры и потолочные светильники" if feed_key == "led_luminaires" else cfg.get("lighting_type")
+        lighting_type = "Люстры и потолочные светильники" if feed_key == "led_luminaires" else (
+            "Лампочки" if feed_key == "lamps" else cfg.get("lighting_type")
+        )
         if lighting_type:
             light_type_el = etree.SubElement(ad, "LigitingType")
             light_type_el.text = lighting_type
@@ -631,41 +633,51 @@ class AvitoFeedGenerator:
 
         # Специфические характеристики для фида ламп (Лист №4)
         if feed_key == "lamps":
-            # 1. Тип лампы: Светодиодная
-            lamp_type_el = etree.SubElement(ad, "LampType")
-            lamp_type_el.text = "Светодиодная"
+            # 1. Тип лампы: Светодиодная / Филаментная
+            is_filament = any(
+                "филамент" in str(prod.get(f) or "").lower() or "filament" in str(prod.get(f) or "").lower()
+                for f in ("name", "led_matrix", "light_source_type")
+            )
             bulb_type_el = etree.SubElement(ad, "BulbType")
-            bulb_type_el.text = "Светодиодная"
+            bulb_type_el.text = "Филаментная" if is_filament else "Светодиодная"
 
-            # 2. Цоколь: из колонки N (base) с удалением пробелов и нормализацией
-            base_val = prod.get("base")
+            # 2. Цоколь: из колонки N (base) без пробелов
+            base_val = (prod.get("base") or "").replace(" ", "")
             if base_val:
-                cap_type_el = etree.SubElement(ad, "CapType")
-                cap_type_el.text = base_val
                 bulb_base_el = etree.SubElement(ad, "BulbBaseType")
                 bulb_base_el.text = base_val
 
-            # 3. Мощность: из колонки M (power)
+            # 3. Бренд: из колонки H
+            if prod.get("brand"):
+                brand_el = etree.SubElement(ad, "Brand")
+                brand_el.text = prod["brand"]
+
+            # 4. Мощность: из колонки M (power) с добавлением ' Вт'
             power_val = prod.get("power")
             if power_val:
+                p_str = str(power_val).strip()
+                if not any(w in p_str.lower() for w in ["вт", "w"]):
+                    p_str = f"{p_str} Вт"
+                elif p_str.lower().endswith("w"):
+                    p_str = re.sub(r'(?i)\s*w$', ' Вт', p_str)
                 power_el = etree.SubElement(ad, "Power")
-                power_el.text = str(power_val)
+                power_el.text = p_str
 
-            # 4. Цветовая температура: из колонки Q (color_temp)
+            # 5. Цветовая температура: из колонки Q (color_temp) с добавлением ' К'
             temp_val = prod.get("color_temp")
             if temp_val:
-                col_temp_el = etree.SubElement(ad, "ColorTemperature")
-                col_temp_el.text = str(temp_val)
+                t_str = str(temp_val).strip()
+                if not any(w in t_str.lower() for w in ["к", "k"]):
+                    t_str = f"{t_str} К"
+                elif t_str.lower().endswith("k"):
+                    t_str = re.sub(r'(?i)\s*k$', ' К', t_str)
                 temp_el = etree.SubElement(ad, "Temperature")
-                temp_el.text = str(temp_val)
+                temp_el.text = t_str
 
-            # 5. Световой поток: из колонки P (lumen)
-            lumen_val = prod.get("lumen")
-            if lumen_val:
-                flux_el = etree.SubElement(ad, "LightFlux")
-                flux_el.text = str(lumen_val)
-
-        if prod.get("brand"):
+            # 6. Количество штук в упаковке: 1
+            pkg_el = etree.SubElement(ad, "BulbsInPackage")
+            pkg_el.text = "1"
+        elif prod.get("brand"):
             brand_el = etree.SubElement(ad, "Brand")
             brand_el.text = prod["brand"]
 

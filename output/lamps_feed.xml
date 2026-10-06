@@ -15,7 +15,7 @@
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -42,15 +42,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612024653</Id>
@@ -65,7 +63,7 @@
 • Световой поток: 2700 лм
 • Цветовая температура: 4000 К
 • Цоколь: E27
-• Индекс цветопередачи: Ra ≥ 70
+• Индекс цветопередачи: Ra 70
 • Срок службы: 30 000 ч.
 • Гарантия производителя: 1 года (лет)
 • Габариты (Д×Ш×В): 135×70×135 мм
@@ -90,15 +88,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>30</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>2700</LightFlux>
     <Brand>ASD</Brand>
+    <Power>30 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612001456</Id>
@@ -135,15 +131,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU5.3</CapType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>675</LightFlux>
     <Brand>ASD</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612001531</Id>
@@ -180,15 +174,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>5</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>450</LightFlux>
     <Brand>ASD</Brand>
+    <Power>5 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612002125</Id>
@@ -203,7 +195,7 @@
 • Световой поток: 450 лм
 • Цветовая температура: 3000 К
 • Цоколь: E14
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
 • Масса нетто: 0.0423 кг
@@ -227,15 +219,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>5</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>450</LightFlux>
     <Brand>ASD</Brand>
+    <Power>5 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612002309</Id>
@@ -272,15 +262,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU10</CapType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>495</LightFlux>
     <Brand>ASD</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612003757</Id>
@@ -316,15 +304,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G4</CapType>
     <BulbBaseType>G4</BulbBaseType>
-    <Power>2</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>135</LightFlux>
     <Brand>VIRONA</Brand>
+    <Power>2 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612003764</Id>
@@ -361,15 +347,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G9</CapType>
     <BulbBaseType>G9</BulbBaseType>
-    <Power>3</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>270</LightFlux>
     <Brand>ASD</Brand>
+    <Power>3 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612003979</Id>
@@ -406,15 +390,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>675</LightFlux>
     <Brand>ASD</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612003993</Id>
@@ -451,15 +433,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>675</LightFlux>
     <Brand>ASD</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612004198</Id>
@@ -496,15 +476,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>20</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>1800</LightFlux>
     <Brand>ASD</Brand>
+    <Power>20 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612004204</Id>
@@ -541,15 +519,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>20</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>1800</LightFlux>
     <Brand>ASD</Brand>
+    <Power>20 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612004204-10</Id>
@@ -584,15 +560,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>20</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>1800</LightFlux>
     <Brand>VIRONA</Brand>
+    <Power>20 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612004648</Id>
@@ -629,15 +603,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G4</CapType>
     <BulbBaseType>G4</BulbBaseType>
-    <Power>3</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>270</LightFlux>
     <Brand>ASD</Brand>
+    <Power>3 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612004655</Id>
@@ -674,15 +646,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G4</CapType>
     <BulbBaseType>G4</BulbBaseType>
-    <Power>5</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>450</LightFlux>
     <Brand>ASD</Brand>
+    <Power>5 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612005089</Id>
@@ -719,15 +689,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>540</LightFlux>
     <Brand>ASD</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612005096</Id>
@@ -764,15 +732,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>ASD</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612005102</Id>
@@ -809,15 +775,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>ASD</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612006789</Id>
@@ -854,15 +818,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>630</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612007199</Id>
@@ -899,15 +861,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>5</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>450</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>5 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612007243</Id>
@@ -942,15 +902,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>5</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>375</LightFlux>
     <Brand>VIRONA</Brand>
+    <Power>5 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612007250</Id>
@@ -985,15 +943,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>5</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>375</LightFlux>
     <Brand>VIRONA</Brand>
+    <Power>5 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612007267</Id>
@@ -1028,15 +984,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>5</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>375</LightFlux>
     <Brand>VIRONA</Brand>
+    <Power>5 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612007274</Id>
@@ -1071,15 +1025,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>5</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>375</LightFlux>
     <Brand>VIRONA</Brand>
+    <Power>5 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612007298</Id>
@@ -1114,15 +1066,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU5.3</CapType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>525</LightFlux>
     <Brand>VIRONA</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612007601</Id>
@@ -1139,7 +1089,7 @@
 • Цоколь: E14
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -1165,15 +1115,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>630</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612007618</Id>
@@ -1190,7 +1138,7 @@
 • Цоколь: E14
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -1216,15 +1164,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>630</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612007663</Id>
@@ -1241,7 +1187,7 @@
 • Цоколь: E14
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -1267,15 +1213,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>630</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612008059</Id>
@@ -1312,15 +1256,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>630</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612008073</Id>
@@ -1337,7 +1279,7 @@
 • Цоколь: E27
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -1363,15 +1305,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>9</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>810</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>9 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612012278</Id>
@@ -1410,15 +1350,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU5.3</CapType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>675</LightFlux>
     <Brand>ASD</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612015446</Id>
@@ -1454,15 +1392,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>900</LightFlux>
     <Brand>ASD</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612015477</Id>
@@ -1498,15 +1434,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>900</LightFlux>
     <Brand>ASD</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612015484</Id>
@@ -1542,15 +1476,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>900</LightFlux>
     <Brand>ASD</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612015507</Id>
@@ -1586,15 +1518,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>900</LightFlux>
     <Brand>VIRONA</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612015576</Id>
@@ -1630,15 +1560,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>900</LightFlux>
     <Brand>ASD</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612015828</Id>
@@ -1653,7 +1581,7 @@
 • Световой поток: 900 лм
 • Цветовая температура: 4000 К
 • Цоколь: GU5.3
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30 000 часов
 • Гарантия производителя: 2 года (лет)
@@ -1677,15 +1605,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU5.3</CapType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>900</LightFlux>
     <Brand>ASD</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612016320</Id>
@@ -1702,7 +1628,7 @@
 • Цоколь: E27
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -1728,15 +1654,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>630</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612016337</Id>
@@ -1753,7 +1677,7 @@
 • Цоколь: E27
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -1779,15 +1703,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>630</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612016399</Id>
@@ -1823,15 +1745,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>630</LightFlux>
     <Brand>VIRONA</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612018737</Id>
@@ -1867,15 +1787,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>230</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>1440</LightFlux>
     <Brand>ASD</Brand>
+    <Power>230 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612019161</Id>
@@ -1911,15 +1829,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU10</CapType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>495</LightFlux>
     <Brand>VIRONA</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612019765</Id>
@@ -1955,15 +1871,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G4</CapType>
     <BulbBaseType>G4</BulbBaseType>
-    <Power>2</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>135</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>2 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612019857</Id>
@@ -1978,7 +1892,7 @@
 • Световой поток: 260 лм
 • Цветовая температура: 3000 К
 • Цоколь: G9
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2004,15 +1918,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G9</CapType>
     <BulbBaseType>G9</BulbBaseType>
-    <Power>3</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>260</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>3 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612019864</Id>
@@ -2048,15 +1960,13 @@
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G9</CapType>
     <BulbBaseType>G9</BulbBaseType>
-    <Power>3</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>270</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>3 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020204</Id>
@@ -2073,7 +1983,7 @@
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2103,15 +2013,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>900</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020273</Id>
@@ -2128,7 +2036,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2158,15 +2066,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>15</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>1350</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>15 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020280</Id>
@@ -2183,7 +2089,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2210,15 +2116,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>15</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>1350</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>15 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020297</Id>
@@ -2235,7 +2139,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2262,15 +2166,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>20</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>1800</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>20 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020303</Id>
@@ -2287,7 +2189,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2314,15 +2216,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>20</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>1800</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>20 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020310</Id>
@@ -2339,7 +2239,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2366,15 +2266,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>20</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>1800</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>20 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020327</Id>
@@ -2391,7 +2289,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GU5.3
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Г
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2418,15 +2316,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU5.3</CapType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020341</Id>
@@ -2443,7 +2339,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GU5.3
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Г
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2470,15 +2366,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU5.3</CapType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020358</Id>
@@ -2495,7 +2389,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GU5.3
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Г
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2522,15 +2416,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU5.3</CapType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020365</Id>
@@ -2547,7 +2439,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GU5.3
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Г
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2574,15 +2466,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU5.3</CapType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>525</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020372</Id>
@@ -2599,7 +2489,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GU5.3
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Г
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2626,15 +2516,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU5.3</CapType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>525</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020396</Id>
@@ -2651,7 +2539,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E14
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2678,15 +2566,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>540</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020402</Id>
@@ -2703,7 +2589,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2730,15 +2616,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>540</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020433</Id>
@@ -2755,7 +2639,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E14
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2782,15 +2666,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020440</Id>
@@ -2807,7 +2689,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2834,15 +2716,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020457</Id>
@@ -2859,7 +2739,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2886,15 +2766,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020464</Id>
@@ -2911,7 +2789,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E14
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2938,15 +2816,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020471</Id>
@@ -2963,7 +2839,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E14
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -2990,15 +2866,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020495</Id>
@@ -3015,7 +2889,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3042,15 +2916,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020501</Id>
@@ -3067,7 +2939,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E14
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3094,15 +2966,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>540</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020518</Id>
@@ -3119,7 +2989,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E14
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3146,15 +3016,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>540</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020525</Id>
@@ -3171,7 +3039,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3198,15 +3066,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>540</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020549</Id>
@@ -3223,7 +3089,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E14
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3250,15 +3116,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020556</Id>
@@ -3275,7 +3139,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E14
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3302,15 +3166,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020563</Id>
@@ -3327,7 +3189,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3354,15 +3216,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020570</Id>
@@ -3379,7 +3239,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3406,15 +3266,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020587</Id>
@@ -3431,7 +3289,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E14
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3458,15 +3316,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020594</Id>
@@ -3483,7 +3339,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E14
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3510,15 +3366,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020600</Id>
@@ -3535,7 +3389,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3562,15 +3416,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020617</Id>
@@ -3587,7 +3439,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3614,15 +3466,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020723</Id>
@@ -3639,7 +3489,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3666,15 +3516,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020747</Id>
@@ -3691,7 +3539,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3718,15 +3566,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020754</Id>
@@ -3743,7 +3589,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3770,15 +3616,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>900</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020778</Id>
@@ -3795,7 +3639,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3822,15 +3666,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>900</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020785</Id>
@@ -3847,7 +3689,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3874,15 +3716,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>12</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>1080</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>12 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020792</Id>
@@ -3899,7 +3739,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3926,15 +3766,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>12</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>1080</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>12 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020808</Id>
@@ -3951,7 +3789,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -3978,15 +3816,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>12</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>1080</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>12 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020815</Id>
@@ -4003,7 +3839,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4030,15 +3866,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>15</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>1350</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>15 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020822</Id>
@@ -4055,7 +3889,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4082,15 +3916,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>15</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>1350</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>15 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612020839</Id>
@@ -4107,7 +3939,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4134,15 +3966,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>15</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>1350</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>15 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612021546</Id>
@@ -4159,7 +3989,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX70
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4186,15 +4016,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX70</CapType>
     <BulbBaseType>GX70</BulbBaseType>
-    <Power>16</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>1280</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>16 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612023380</Id>
@@ -4211,7 +4039,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GU10
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Г
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4238,15 +4066,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU10</CapType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>525</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612023403</Id>
@@ -4263,7 +4089,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GU10
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Г
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4290,15 +4116,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU10</CapType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>525</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612023427</Id>
@@ -4315,7 +4139,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GU10
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Г
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4342,15 +4166,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU10</CapType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612024028</Id>
@@ -4367,7 +4189,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4394,15 +4216,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612024042</Id>
@@ -4419,7 +4239,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4446,15 +4266,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>8</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>720</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>8 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612024066</Id>
@@ -4471,7 +4289,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4501,15 +4319,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>25</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>2250</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>25 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612024080</Id>
@@ -4526,7 +4342,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4553,15 +4369,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>25</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>2250</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>25 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612024127</Id>
@@ -4578,7 +4392,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4605,15 +4419,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>30</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>2700</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>30 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612024165</Id>
@@ -4630,7 +4442,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4657,15 +4469,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>30</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>2700</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>30 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612024691</Id>
@@ -4700,15 +4510,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>40</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>3600</LightFlux>
     <Brand>VIRONA</Brand>
+    <Power>40 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612026107</Id>
@@ -4725,7 +4533,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4751,15 +4559,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>9</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>810</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>9 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612026121</Id>
@@ -4776,7 +4582,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4802,15 +4608,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612026145</Id>
@@ -4827,7 +4631,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4853,15 +4657,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612026169</Id>
@@ -4878,7 +4680,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4904,15 +4706,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612030753</Id>
@@ -4929,7 +4729,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GU10
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Г
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -4956,15 +4756,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU10</CapType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>525</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612030777</Id>
@@ -4981,7 +4779,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5008,15 +4806,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>540</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612030791</Id>
@@ -5033,7 +4829,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5060,15 +4856,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>540</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612030814</Id>
@@ -5085,7 +4879,7 @@ A60/Грушевидная (тип A)
 • Цоколь: GX53
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5112,15 +4906,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GX53</CapType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>540</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612030890</Id>
@@ -5137,7 +4929,7 @@ A60/Грушевидная (тип A)
 • Цоколь: G13
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5163,15 +4955,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G13</CapType>
     <BulbBaseType>G13</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>800</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612030920</Id>
@@ -5188,7 +4978,7 @@ A60/Грушевидная (тип A)
 • Цоколь: G13
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5214,15 +5004,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G13</CapType>
     <BulbBaseType>G13</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>800</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612030975</Id>
@@ -5239,7 +5027,7 @@ A60/Грушевидная (тип A)
 • Цоколь: G13
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5265,15 +5053,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G13</CapType>
     <BulbBaseType>G13</BulbBaseType>
-    <Power>20</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>1620</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>20 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612030999</Id>
@@ -5290,7 +5076,7 @@ A60/Грушевидная (тип A)
 • Цоколь: G13
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5316,15 +5102,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G13</CapType>
     <BulbBaseType>G13</BulbBaseType>
-    <Power>20</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>1620</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>20 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612031002</Id>
@@ -5341,7 +5125,7 @@ A60/Грушевидная (тип A)
 • Цоколь: G13
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5367,15 +5151,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G13</CapType>
     <BulbBaseType>G13</BulbBaseType>
-    <Power>20</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>1620</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>20 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612031019</Id>
@@ -5392,7 +5174,7 @@ A60/Грушевидная (тип A)
 • Цоколь: G13
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5418,15 +5200,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G13</CapType>
     <BulbBaseType>G13</BulbBaseType>
-    <Power>30</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>2440</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>30 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612031026</Id>
@@ -5443,7 +5223,7 @@ A60/Грушевидная (тип A)
 • Цоколь: G13
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5469,15 +5249,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>G13</CapType>
     <BulbBaseType>G13</BulbBaseType>
-    <Power>30</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>2440</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>30 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612031095</Id>
@@ -5494,7 +5272,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5521,15 +5299,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>40</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>3600</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>40 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612031101</Id>
@@ -5546,7 +5322,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5573,15 +5349,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>40</Power>
-    <ColorTemperature>6500</ColorTemperature>
-    <Temperature>6500</Temperature>
-    <LightFlux>3600</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>40 Вт</Power>
+    <Temperature>6500 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612031118</Id>
@@ -5598,7 +5372,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5625,15 +5399,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>50</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>4500</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>50 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612035659</Id>
@@ -5650,7 +5422,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5676,15 +5448,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>9</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>810</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>9 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612035673</Id>
@@ -5701,7 +5471,7 @@ A60/Грушевидная (тип A)
 • Цоколь: E27
 • Тип матрицы: filament
 • Кривая силы света (КСС): Д
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 5% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5727,15 +5497,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
-    <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
+    <LigitingType>Лампочки</LigitingType>
+    <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690612038032</Id>
@@ -5751,7 +5519,7 @@ A60/Грушевидная (тип A)
 • Цветовая температура: 4000 К
 • Цоколь: E27
 • Тип матрицы: SMD
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 10% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 2 года (лет)
@@ -5778,15 +5546,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>10</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>900</LightFlux>
     <Brand>IN HOME</Brand>
+    <Power>10 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690626002869</Id>
@@ -5822,14 +5588,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>18</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
     <Brand>Smartbuy</Brand>
+    <Power>18 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>4690626079649</Id>
@@ -5862,12 +5627,12 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>40</Power>
     <Brand>VIRONA</Brand>
+    <Power>40 Вт</Power>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>G103101107</Id>
@@ -5905,15 +5670,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>550</LightFlux>
     <Brand>Gauss</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>G103101207</Id>
@@ -5950,15 +5713,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>550</LightFlux>
     <Brand>Gauss</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>G106001204</Id>
@@ -5992,14 +5753,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>4</Power>
-    <ColorTemperature>4100</ColorTemperature>
-    <Temperature>4100</Temperature>
     <Brand>Gauss</Brand>
+    <Power>4 Вт</Power>
+    <Temperature>4100 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>G13629</Id>
@@ -6014,7 +5774,7 @@ A60/Грушевидная (тип A)
 • Световой поток: 660 лм
 • Цветовая температура: 4200 К
 • Цоколь: GU10
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Срок службы: 25 000 ч.
 • Гарантия производителя: 2 года (лет)
 
@@ -6037,15 +5797,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>GU10</CapType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Power>9</Power>
-    <ColorTemperature>4200</ColorTemperature>
-    <Temperature>4200</Temperature>
-    <LightFlux>660</LightFlux>
     <Brand>Gauss</Brand>
+    <Power>9 Вт</Power>
+    <Temperature>4200 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>G23214P</Id>
@@ -6079,14 +5837,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>14</Power>
-    <ColorTemperature>2700</ColorTemperature>
-    <Temperature>2700</Temperature>
     <Brand>Gauss</Brand>
+    <Power>14 Вт</Power>
+    <Temperature>2700 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>G23225</Id>
@@ -6101,7 +5858,7 @@ A60/Грушевидная (тип A)
 • Световой поток: 1450 лм
 • Цветовая температура: 4200 К
 • Цоколь: E27
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Срок службы: 25 000 ч.
 • Гарантия производителя: 1 года (лет)
 
@@ -6124,15 +5881,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>15</Power>
-    <ColorTemperature>4200</ColorTemperature>
-    <Temperature>4200</Temperature>
-    <LightFlux>1450</LightFlux>
     <Brand>Gauss</Brand>
+    <Power>15 Вт</Power>
+    <Temperature>4200 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>G33117T</Id>
@@ -6166,14 +5921,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>2700</ColorTemperature>
-    <Temperature>2700</Temperature>
     <Brand>Gauss</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>2700 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>G33127T</Id>
@@ -6207,14 +5961,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E14</CapType>
     <BulbBaseType>E14</BulbBaseType>
-    <Power>7</Power>
-    <ColorTemperature>4100</ColorTemperature>
-    <Temperature>4100</Temperature>
     <Brand>Gauss</Brand>
+    <Power>7 Вт</Power>
+    <Temperature>4100 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>G33226</Id>
@@ -6229,7 +5982,7 @@ A60/Грушевидная (тип A)
 • Световой поток: 450 лм
 • Цветовая температура: 4000 К
 • Цоколь: E27
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Срок службы: 25 000 ч.
 • Гарантия производителя: 2 года (лет)
 
@@ -6252,15 +6005,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>6</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>450</LightFlux>
     <Brand>Gauss</Brand>
+    <Power>6 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>R100343</Id>
@@ -6278,7 +6029,7 @@ A60/Грушевидная (тип A)
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
 • Степень защиты: IP20
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 1% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 1 года (лет)
@@ -6304,15 +6055,13 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>20</Power>
-    <ColorTemperature>4000</ColorTemperature>
-    <Temperature>4000</Temperature>
-    <LightFlux>1800</LightFlux>
     <Brand>RSV</Brand>
+    <Power>20 Вт</Power>
+    <Temperature>4000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
     <Id>R100488</Id>
@@ -6330,7 +6079,7 @@ A60/Грушевидная (тип A)
 • Тип матрицы: SMD
 • Кривая силы света (КСС): Д
 • Степень защиты: IP20
-• Индекс цветопередачи: Ra ≥ 80
+• Индекс цветопередачи: Ra 80
 • Коэффициент пульсации: ≤ 1% (без мерцания)
 • Срок службы: 30000 ч.
 • Гарантия производителя: 1 года (лет)
@@ -6358,14 +6107,12 @@ A60/Грушевидная (тип A)
     <Category>Мебель и интерьер</Category>
     <GoodsType>Освещение</GoodsType>
     <GoodsSubType>Комплектующие</GoodsSubType>
-    <LampType>Светодиодная</LampType>
+    <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
-    <CapType>E27</CapType>
     <BulbBaseType>E27</BulbBaseType>
-    <Power>11</Power>
-    <ColorTemperature>3000</ColorTemperature>
-    <Temperature>3000</Temperature>
-    <LightFlux>990</LightFlux>
     <Brand>RSV</Brand>
+    <Power>11 Вт</Power>
+    <Temperature>3000 К</Temperature>
+    <BulbsInPackage>1</BulbsInPackage>
   </Ad>
 </Ads>

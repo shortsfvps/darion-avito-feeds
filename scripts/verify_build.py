@@ -289,6 +289,63 @@ class BuildVerifier:
             title_length_valid,
             f"Заголовок: '{title_val}'"
         )
+
+        # Глубокая валидация lamps_feed.xml
+        lamps_feed_path = os.path.join(output_dir, "lamps_feed.xml")
+        lamps_tags_valid = False
+        lamps_no_obsolete_tags = False
+        lamps_count = 0
+        lamps_details = ""
+
+        if os.path.exists(lamps_feed_path):
+            tree = etree.parse(lamps_feed_path, parser=strict_parser)
+            ads = tree.findall("Ad")
+            lamps_count = len(ads)
+            if lamps_count > 0:
+                first_ad = ads[0]
+                cat = first_ad.findtext("Category")
+                gt = first_ad.findtext("GoodsType")
+                gst = first_ad.findtext("GoodsSubType")
+                lt = first_ad.findtext("LigitingType")
+                bt = first_ad.findtext("BulbType")
+                bbt = first_ad.findtext("BulbBaseType")
+                br = first_ad.findtext("Brand")
+                pw = first_ad.findtext("Power")
+                bip = first_ad.findtext("BulbsInPackage")
+
+                lamps_tags_valid = (
+                    cat == "Мебель и интерьер" and
+                    gt == "Освещение" and
+                    gst == "Комплектующие" and
+                    lt == "Лампочки" and
+                    bt in ("Светодиодная", "Филаментная") and
+                    bool(bbt) and bool(br) and
+                    (pw and "Вт" in pw) and
+                    bip == "1"
+                )
+                lamps_details = f"Объявлений: {lamps_count}, Category={cat}, GoodsSubType={gst}, LigitingType={lt}, BulbType={bt}"
+
+                has_obsolete = any(
+                    ad.find("LampType") is not None or
+                    ad.find("CapType") is not None or
+                    ad.find("ColorTemperature") is not None or
+                    ad.find("LightFlux") is not None
+                    for ad in ads
+                )
+                lamps_no_obsolete_tags = not has_obsolete
+
+        self.check(
+            "Artifacts",
+            "Соответствие схемы lamps_feed.xml (Category/GoodsType/GoodsSubType/LigitingType/BulbType/BulbBaseType/Power/BulbsInPackage)",
+            lamps_tags_valid,
+            lamps_details
+        )
+        self.check(
+            "Artifacts",
+            "Отсутствие устаревших тегов в lamps_feed.xml (<LampType>, <CapType>, <ColorTemperature>, <LightFlux>)",
+            lamps_no_obsolete_tags,
+            "Устаревшие теги отсутствуют во всех объявлениях фида ламп"
+        )
         print()
 
         # ----------------------------------------------------------------------
