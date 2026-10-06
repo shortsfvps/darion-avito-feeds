@@ -6033,7 +6033,6 @@ A60/Грушевидная (тип A)
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
     <Power>4 Вт</Power>
-    <Temperature>4100 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
@@ -6076,7 +6075,6 @@ A60/Грушевидная (тип A)
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU10</BulbBaseType>
     <Power>9 Вт</Power>
-    <Temperature>4200 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
@@ -6159,7 +6157,6 @@ A60/Грушевидная (тип A)
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
     <Power>15 Вт</Power>
-    <Temperature>4200 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>
@@ -6237,7 +6234,6 @@ A60/Грушевидная (тип A)
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
     <Power>7 Вт</Power>
-    <Temperature>4100 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
   </Ad>
   <Ad>

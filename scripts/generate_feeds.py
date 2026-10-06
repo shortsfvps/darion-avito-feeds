@@ -704,7 +704,13 @@ class AvitoFeedGenerator:
                 power_el = etree.SubElement(ad, "Power")
                 power_el.text = p_str
 
-            # 5. Цветовая температура: из колонки Q (color_temp) с добавлением ' К'
+            # 5. Цветовая температура: из колонки Q (color_temp)
+            # Тег <Temperature> в Авито необязательный и принимает строго фиксированный список значений.
+            # Нестандартные температуры (4100 К, 4200 К) отсутствуют в справочнике Авито и вызывают ошибку валидатора "Значение не найдено".
+            VALID_TEMPS = {
+                '1800 К', '2000 К', '2200 К', '2400 К', '2700 К', '2800 К',
+                '3000 К', '4000 К', '5000 К', '6000 К', '6400 К', '6500 К'
+            }
             temp_val = prod.get("color_temp")
             if temp_val:
                 t_str = str(temp_val).strip()
@@ -712,8 +718,9 @@ class AvitoFeedGenerator:
                     t_str = f"{t_str} К"
                 elif t_str.lower().endswith("k"):
                     t_str = re.sub(r'(?i)\s*k$', ' К', t_str)
-                temp_el = etree.SubElement(ad, "Temperature")
-                temp_el.text = t_str
+                if t_str in VALID_TEMPS:
+                    temp_el = etree.SubElement(ad, "Temperature")
+                    temp_el.text = t_str
 
             # 6. Количество штук в упаковке: 1
             pkg_el = etree.SubElement(ad, "BulbsInPackage")

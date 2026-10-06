@@ -335,6 +335,21 @@ class BuildVerifier:
                 )
                 lamps_no_obsolete_tags = not has_obsolete
 
+                # Проверка фильтрации температур по белому списку Авито
+                valid_temps_set = {
+                    '1800 К', '2000 К', '2200 К', '2400 К', '2700 К', '2800 К',
+                    '3000 К', '4000 К', '5000 К', '6000 К', '6400 К', '6500 К'
+                }
+                invalid_temps = [
+                    ad.findtext("Temperature") for ad in ads
+                    if ad.find("Temperature") is not None and ad.findtext("Temperature") not in valid_temps_set
+                ]
+                g_special_no_temp = all(
+                    ad.find("Temperature") is None
+                    for ad in ads if ad.findtext("Id") in ("G33127T", "G13629")
+                )
+                lamps_temp_valid = (len(invalid_temps) == 0 and g_special_no_temp)
+
         self.check(
             "Artifacts",
             "Соответствие схемы lamps_feed.xml (Category/GoodsType/GoodsSubType/LigitingType/BulbType/BulbBaseType/Power/BulbsInPackage)",
@@ -346,6 +361,12 @@ class BuildVerifier:
             "Исключение недопустимых брендов (RSV) и устаревших тегов в lamps_feed.xml (<LampType>, <CapType>, <ColorTemperature>, <LightFlux>)",
             lamps_no_obsolete_tags,
             "Тег Brand=RSV и устаревшие теги отсутствуют во всех объявлениях фида ламп"
+        )
+        self.check(
+            "Artifacts",
+            "Фильтрация тега <Temperature> по словарю Авито (исключение нестандартных 4100 К / 4200 К на G33127T и G13629)",
+            lamps_temp_valid,
+            "Тег <Temperature> отсутствует на G33127T и G13629, все остальные значения входят в VALID_TEMPS"
         )
         print()
 
