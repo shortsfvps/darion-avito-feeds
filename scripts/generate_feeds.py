@@ -193,22 +193,21 @@ class StockSync:
                 if not m:
                     continue
                 ws = wb[sname]
-                has_items = any(ws.cell(r, 1).value for r in range(3, min(ws.max_row + 1, 15)))
-                if not has_items:
-                    if wb_backup is None:
-                        wb_backup = openpyxl.load_workbook(backup_path, data_only=True)
-                    for bname in wb_backup.sheetnames:
-                        mb = re.match(r'^\s*([1-8])\b', bname)
-                        if mb and mb.group(1) == m.group(1):
-                            ws_b = wb_backup[bname]
-                            cnt_b = sum(1 for r in range(3, ws_b.max_row + 1) if ws_b.cell(r, 1).value)
-                            if cnt_b > 0:
-                                del wb[sname]
-                                ws_new = wb.create_sheet(title=sname)
-                                for row in ws_b.iter_rows(values_only=True):
-                                    ws_new.append(list(row))
-                                logger.info(f"Лист '{sname}' дополнен из резервного эталона ({cnt_b} позиций)")
-                            break
+                cnt_curr = sum(1 for r in range(3, ws.max_row + 1) if ws.cell(r, 1).value)
+                if wb_backup is None:
+                    wb_backup = openpyxl.load_workbook(backup_path, data_only=True)
+                for bname in wb_backup.sheetnames:
+                    mb = re.match(r'^\s*([1-8])\b', bname)
+                    if mb and mb.group(1) == m.group(1):
+                        ws_b = wb_backup[bname]
+                        cnt_b = sum(1 for r in range(3, ws_b.max_row + 1) if ws_b.cell(r, 1).value)
+                        if cnt_b > 0 and (cnt_curr == 0 or (cnt_b >= 30 and cnt_curr < 20)):
+                            del wb[sname]
+                            ws_new = wb.create_sheet(title=sname)
+                            for row in ws_b.iter_rows(values_only=True):
+                                ws_new.append(list(row))
+                            logger.info(f"Лист '{sname}' дополнен из резервного эталона ({cnt_b} позиций вместо {cnt_curr})")
+                        break
 
         return wb
 
@@ -373,7 +372,9 @@ class DescriptionBuilder:
     def build_description(cls, prod: dict) -> str:
         name = prod.get("name", "").strip()
         sku = prod.get("sku", "").strip()
-        brand = prod.get("brand", "").strip() or config.COMPANY_BRAND
+        brand = str(prod.get("brand") or "").strip()
+        if brand.lower() in ("none", "nan", "null", "-", ""):
+            brand = ""
 
         # Характеристики
         specs = []
@@ -515,7 +516,8 @@ class DescriptionBuilder:
 
 Звоните или пишите в сообщения на Авито — рассчитаем освещенность объекта и подберем необходимое оборудование!"""
 
-        header_block = f"{name}\nАртикул: {sku}\nПроизводитель: {brand}\n\n[ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ]\n{specs_block}"
+        brand_line = f"Производитель: {brand}\n" if brand else ""
+        header_block = f"{name}\nАртикул: {sku}\n{brand_line}\n[ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ]\n{specs_block}".replace("\n\n\n", "\n\n")
 
         description_text = f"{header_block}{marketing_block}\n\n{company_block}".strip()
 
@@ -811,7 +813,7 @@ class AvitoFeedGenerator:
                         "main_image": main_image,
                         "warranty": format_num_val(ws.cell(r, 6).value),
                         "country": str(ws.cell(r, 7).value or "").strip(),
-                        "brand": str(ws.cell(r, 8).value or config.COMPANY_BRAND).strip(),
+                        "brand": str(ws.cell(r, 8).value or "").strip(),
                         "mounting": str(ws.cell(r, 9).value or "").strip(),
                         "application": str(ws.cell(r, 10).value or "").strip(),
                         "light_source_type": str(ws.cell(r, 11).value or "").strip(),
@@ -846,6 +848,23 @@ class AvitoFeedGenerator:
                     }
 
                     if feed_key == "lamps":
+                        # Определение производителя для ламп: строго из колонки 8 («Торговая марка»).
+                        # Если ячейка пустая, проверяем упоминание реального производителя в наименовании (ASD, IN HOME, Smartbuy и др.).
+                        # Никаких дефолтных брендов (исключение VIRONA). Если производитель не указан — оставляем пустым.
+                        lamp_brand = prod["brand"]
+                        if lamp_brand.lower() in ("none", "nan", "null", "-", ""):
+                            lamp_brand = ""
+                        if not lamp_brand:
+                            m_br = re.search(r'\b(IN HOME|Smartbuy|Gauss|RSV|ASD|NEOX|Feron|Navigator|ЭРА|Космос)\b', name, re.IGNORECASE)
+                            if m_br:
+                                brand_map = {
+                                    "in home": "IN HOME", "smartbuy": "Smartbuy", "gauss": "Gauss",
+                                    "rsv": "RSV", "asd": "ASD", "neox": "NEOX", "feron": "Feron",
+                                    "navigator": "Navigator", "эра": "ЭРА", "космос": "Космос"
+                                }
+                                lamp_brand = brand_map.get(m_br.group(1).lower(), m_br.group(1))
+                        prod["brand"] = lamp_brand
+
                         # Нормализация цоколя: удаление пробелов, русские 'Е' -> 'E', fallback на имя
                         base_val = prod["base"].replace(" ", "").replace("Е", "E").replace("е", "e")
                         if not base_val or base_val.lower() == "none":
