@@ -412,15 +412,47 @@ class DescriptionBuilder:
             cri_str = cri_val if cri_val.lower().startswith("ra") else f"Ra {cri_val}"
             specs.append(f"• Индекс цветопередачи: {cri_str}")
 
+        # Коэффициент мощности (cos φ) (Колонка AK / 37)
+        if cls._is_valid(prod.get("power_factor")):
+            specs.append(f"• Коэффициент мощности (cos φ): {prod['power_factor']}")
+
+        # Номинальный ток (Колонка AM / 39)
+        if cls._is_valid(prod.get("rated_current")):
+            cur_val = str(prod["rated_current"]).strip()
+            cur_str = cur_val if any(w in cur_val.lower() for w in ["а", "a"]) else f"{cur_val} А"
+            specs.append(f"• Номинальный ток: {cur_str}")
+
         # Коэффициент пульсации (Колонка AL / 38)
         if cls._is_valid(prod.get("pulsation")):
             specs.append(f"• Коэффициент пульсации: ≤ {prod['pulsation']}% (без мерцания)")
+
+        # Тип ПРА (Колонка AI / 35)
+        if cls._is_valid(prod.get("ballast_type")):
+            specs.append(f"• Тип ПРА: {prod['ballast_type']}")
+
+        # Класс энергоэффективности (Колонка AJ / 36)
+        if cls._is_valid(prod.get("energy_class")):
+            specs.append(f"• Класс энергоэффективности: {prod['energy_class']}")
 
         # Колонка U (21) «Срок службы»
         if cls._is_valid(prod.get("lifetime")):
             lt_val = str(prod["lifetime"]).strip()
             lt_str = f"{lt_val} ч." if re.match(r'^\d+$', lt_val.replace(' ', '')) else lt_val
             specs.append(f"• Срок службы: {lt_str}")
+
+        # Температурный режим (Колонки AP / 42 и AQ / 43)
+        has_t_min = cls._is_valid(prod.get("temp_min"))
+        has_t_max = cls._is_valid(prod.get("temp_max"))
+        if has_t_min and has_t_max:
+            specs.append(f"• Диапазон рабочих температур: от {prod['temp_min']} до {prod['temp_max']} °C")
+        elif has_t_min:
+            t_val = str(prod["temp_min"]).strip()
+            t_str = t_val if any(w in t_val.lower() for w in ["°c", "°с", "град"]) else f"{t_val} °C"
+            specs.append(f"• Рабочая температура: {t_str}")
+        elif has_t_max:
+            t_val = str(prod["temp_max"]).strip()
+            t_str = t_val if any(w in t_val.lower() for w in ["°c", "°с", "град"]) else f"{t_val} °C"
+            specs.append(f"• Рабочая температура: {t_str}")
 
         # Колонка I (9) «Способ установки»
         if cls._is_valid(prod.get("mounting")):
@@ -444,13 +476,23 @@ class DescriptionBuilder:
         if cls._is_valid(prod.get("body_material")):
             specs.append(f"• Материал корпуса: {prod['body_material']}")
 
+        # Конструкция (Колонка AF / 32)
+        if cls._is_valid(prod.get("construction")):
+            specs.append(f"• Конструкция: {prod['construction']}")
+
+        # Оптическая часть (Колонка AG / 33)
+        if cls._is_valid(prod.get("optical_part")):
+            specs.append(f"• Оптическая часть: {prod['optical_part']}")
+
         # Рассеиватель (Колонка AE / 31)
         if cls._is_valid(prod.get("diffuser_material")):
             specs.append(f"• Рассеиватель: {prod['diffuser_material']}")
 
-        # Габариты (Колонки V, W, X / 22, 23, 24)
+        # Габаритные размеры (Колонки V-AA: 22-27, A, B, C, D, d, H)
         if cls._is_valid(prod.get("dimensions")):
-            specs.append(f"• Габариты (Д×Ш×В): {prod['dimensions']} мм")
+            dim_val = str(prod["dimensions"]).strip()
+            dim_str = dim_val if any(w in dim_val.lower() for w in ["мм", "mm", "см", "cm", "м"]) else f"{dim_val} мм"
+            specs.append(f"• Габаритные размеры: {dim_str}")
 
         # Масса нетто (Колонка AB / 28)
         if cls._is_valid(prod.get("weight")):
@@ -725,11 +767,23 @@ class AvitoFeedGenerator:
                 main_image = image_resolver.resolve_main_image(ws, r, sku, barcode)
 
                 if stock > 0 and price > 1 and main_image and main_image.startswith("http"):
-                    # Габариты A(22), B(23), C(24)
+                    # Размеры (Колонки V-AA: 22-27, A, B, C, D, d, H)
                     dim_a = format_num_val(ws.cell(r, 22).value)
                     dim_b = format_num_val(ws.cell(r, 23).value)
                     dim_c = format_num_val(ws.cell(r, 24).value)
-                    dim_str = f"{dim_a}×{dim_b}×{dim_c}" if (dim_a and dim_b and dim_c) else None
+                    dim_d = format_num_val(ws.cell(r, 25).value)
+                    dim_small_d = format_num_val(ws.cell(r, 26).value)
+                    dim_h = format_num_val(ws.cell(r, 27).value)
+
+                    dim_third = dim_c if dim_c else dim_h
+                    if dim_a and dim_b and dim_third:
+                        dim_str = f"{dim_a}x{dim_b}x{dim_third}"
+                    elif dim_a and dim_b:
+                        dim_str = f"{dim_a}x{dim_b}"
+                    elif dim_a and dim_third:
+                        dim_str = f"{dim_a}x{dim_third}"
+                    else:
+                        dim_str = None
 
                     prod = {
                         "sheet": sheet_name,
@@ -758,8 +812,16 @@ class AvitoFeedGenerator:
                         "weight": format_num_val(ws.cell(r, 28).value),
                         "body_material": str(ws.cell(r, 30).value or "").strip(),
                         "diffuser_material": str(ws.cell(r, 31).value or "").strip(),
+                        "construction": str(ws.cell(r, 32).value or "").strip(),
+                        "optical_part": str(ws.cell(r, 33).value or "").strip(),
                         "extra_desc": str(ws.cell(r, 34).value or "").strip(),
+                        "ballast_type": str(ws.cell(r, 35).value or "").strip(),
+                        "energy_class": str(ws.cell(r, 36).value or "").strip(),
+                        "power_factor": format_num_val(ws.cell(r, 37).value),
                         "pulsation": format_num_val(ws.cell(r, 38).value),
+                        "rated_current": format_num_val(ws.cell(r, 39).value),
+                        "temp_min": format_num_val(ws.cell(r, 42).value),
+                        "temp_max": format_num_val(ws.cell(r, 43).value),
                         "extra_images": ws.cell(r, 56).value,
                         "site_url": ws.cell(r, 57).value,
                         "stock": int(round(stock)),
