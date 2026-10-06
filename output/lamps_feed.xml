@@ -45,7 +45,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -91,7 +90,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>30 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -134,7 +132,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>8 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -177,7 +174,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>5 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -222,7 +218,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>5 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -265,7 +260,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>6 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -307,7 +301,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G4</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>2 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -350,7 +343,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G9</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>3 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -393,7 +385,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>8 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -436,7 +427,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>8 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -479,7 +469,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>20 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -522,7 +511,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>20 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -563,7 +551,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>20 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -606,7 +593,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G4</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>3 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -649,7 +635,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G4</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>5 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -692,7 +677,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>6 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -735,7 +719,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>8 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -778,7 +761,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>8 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -821,7 +803,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>7 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -864,7 +845,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>5 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -905,7 +885,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>5 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -946,7 +925,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>5 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -987,7 +965,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>5 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1028,7 +1005,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>5 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1069,7 +1045,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>7 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1118,7 +1093,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>7 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1167,7 +1141,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>7 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1216,7 +1189,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>7 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1259,7 +1231,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>7 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1308,7 +1279,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>9 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1353,7 +1323,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>7 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1395,7 +1364,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>10 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1437,7 +1405,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>10 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1479,7 +1446,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>10 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1521,7 +1487,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>10 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1563,7 +1528,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>10 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1608,7 +1572,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>10 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1657,7 +1620,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>7 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1706,7 +1668,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>7 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1748,7 +1709,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>7 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1790,7 +1750,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>ASD</Brand>
     <Power>230 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1832,7 +1791,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>6 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1874,7 +1832,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G4</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>2 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1921,7 +1878,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G9</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>3 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -1963,7 +1919,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G9</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>3 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2016,7 +1971,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>10 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2069,7 +2023,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>15 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2119,7 +2072,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>15 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2169,7 +2121,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>20 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2219,7 +2170,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>20 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2269,7 +2219,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>20 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2319,7 +2268,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2369,7 +2317,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2419,7 +2366,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2469,7 +2415,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2519,7 +2464,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU5.3</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2569,7 +2513,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2619,7 +2562,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2669,7 +2611,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2719,7 +2660,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2769,7 +2709,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2819,7 +2758,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2869,7 +2807,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2919,7 +2856,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -2969,7 +2905,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3019,7 +2954,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3069,7 +3003,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3119,7 +3052,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3169,7 +3101,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3219,7 +3150,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3269,7 +3199,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3319,7 +3248,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3369,7 +3297,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3419,7 +3346,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3469,7 +3395,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3519,7 +3444,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3569,7 +3493,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3619,7 +3542,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>10 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3669,7 +3591,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>10 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3719,7 +3640,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>12 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3769,7 +3689,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>12 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3819,7 +3738,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>12 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3869,7 +3787,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>15 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3919,7 +3836,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>15 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -3969,7 +3885,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>15 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4019,7 +3934,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX70</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>16 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4069,7 +3983,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4119,7 +4032,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4169,7 +4081,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4219,7 +4130,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4269,7 +4179,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>8 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4322,7 +4231,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>25 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4372,7 +4280,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>25 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4422,7 +4329,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>30 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4472,7 +4378,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>30 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4513,7 +4418,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>40 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4562,7 +4466,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>9 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4611,7 +4514,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4660,7 +4562,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4709,7 +4610,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4759,7 +4659,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4809,7 +4708,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4859,7 +4757,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4909,7 +4806,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>6 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -4958,7 +4854,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G13</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>10 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5007,7 +4902,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G13</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>10 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5056,7 +4950,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G13</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>20 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5105,7 +4998,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G13</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>20 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5154,7 +5046,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G13</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>20 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5203,7 +5094,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G13</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>30 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5252,7 +5142,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>G13</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>30 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5302,7 +5191,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>40 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5352,7 +5240,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>40 Вт</Power>
     <Temperature>6500 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5402,7 +5289,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>50 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5451,7 +5337,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>9 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5500,7 +5385,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Филаментная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>11 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5549,7 +5433,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>IN HOME</Brand>
     <Power>10 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5591,7 +5474,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>Smartbuy</Brand>
     <Power>18 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5630,7 +5512,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>VIRONA</Brand>
     <Power>40 Вт</Power>
     <BulbsInPackage>1</BulbsInPackage>
   </Ad>
@@ -5673,7 +5554,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>Gauss</Brand>
     <Power>6 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5716,7 +5596,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>Gauss</Brand>
     <Power>6 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5756,7 +5635,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>Gauss</Brand>
     <Power>4 Вт</Power>
     <Temperature>4100 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5800,7 +5678,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GU10</BulbBaseType>
-    <Brand>Gauss</Brand>
     <Power>9 Вт</Power>
     <Temperature>4200 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5840,7 +5717,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>Gauss</Brand>
     <Power>14 Вт</Power>
     <Temperature>2700 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5884,7 +5760,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>Gauss</Brand>
     <Power>15 Вт</Power>
     <Temperature>4200 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5924,7 +5799,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>Gauss</Brand>
     <Power>7 Вт</Power>
     <Temperature>2700 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -5964,7 +5838,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E14</BulbBaseType>
-    <Brand>Gauss</Brand>
     <Power>7 Вт</Power>
     <Temperature>4100 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -6008,7 +5881,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>Gauss</Brand>
     <Power>6 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -6058,7 +5930,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>RSV</Brand>
     <Power>20 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
@@ -6110,7 +5981,6 @@ A60/Грушевидная (тип A)
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>E27</BulbBaseType>
-    <Brand>RSV</Brand>
     <Power>11 Вт</Power>
     <Temperature>3000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>

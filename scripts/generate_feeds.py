@@ -647,10 +647,9 @@ class AvitoFeedGenerator:
                 bulb_base_el = etree.SubElement(ad, "BulbBaseType")
                 bulb_base_el.text = base_val
 
-            # 3. Бренд: из колонки H
-            if prod.get("brand"):
-                brand_el = etree.SubElement(ad, "Brand")
-                brand_el.text = prod["brand"]
+            # 3. Бренд: тег <Brand> опционален для ламп в схеме Авито. Полностью исключен из XML для ламп
+            # (выводится в тексте Description в блоке производителя), чтобы исключить ошибку валидатора Авито
+            # "Ошибка параметра. Бренд: Значение не найдено" для редких или внутренних брендов (RSV, VIRONA и др.)
 
             # 4. Мощность: из колонки M (power) с добавлением ' Вт'
             power_val = prod.get("power")

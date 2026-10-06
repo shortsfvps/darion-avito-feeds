@@ -319,7 +319,7 @@ class BuildVerifier:
                     gst == "Комплектующие" and
                     lt == "Лампочки" and
                     bt in ("Светодиодная", "Филаментная") and
-                    bool(bbt) and bool(br) and
+                    bool(bbt) and
                     (pw and "Вт" in pw) and
                     bip == "1"
                 )
@@ -329,7 +329,8 @@ class BuildVerifier:
                     ad.find("LampType") is not None or
                     ad.find("CapType") is not None or
                     ad.find("ColorTemperature") is not None or
-                    ad.find("LightFlux") is not None
+                    ad.find("LightFlux") is not None or
+                    ad.findtext("Brand") == "RSV"
                     for ad in ads
                 )
                 lamps_no_obsolete_tags = not has_obsolete
@@ -342,9 +343,9 @@ class BuildVerifier:
         )
         self.check(
             "Artifacts",
-            "Отсутствие устаревших тегов в lamps_feed.xml (<LampType>, <CapType>, <ColorTemperature>, <LightFlux>)",
+            "Исключение недопустимых брендов (RSV) и устаревших тегов в lamps_feed.xml (<LampType>, <CapType>, <ColorTemperature>, <LightFlux>)",
             lamps_no_obsolete_tags,
-            "Устаревшие теги отсутствуют во всех объявлениях фида ламп"
+            "Тег Brand=RSV и устаревшие теги отсутствуют во всех объявлениях фида ламп"
         )
         print()
 
