@@ -1790,7 +1790,6 @@
     <LigitingType>Лампочки</LigitingType>
     <BulbType>Светодиодная</BulbType>
     <BulbBaseType>GX53</BulbBaseType>
-    <Power>230 Вт</Power>
     <Temperature>4000 К</Temperature>
     <BulbsInPackage>1</BulbsInPackage>
   </Ad>

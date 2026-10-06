@@ -350,6 +350,23 @@ class BuildVerifier:
                 )
                 lamps_temp_valid = (len(invalid_temps) == 0 and g_special_no_temp)
 
+                # Проверка фильтрации мощности по белому списку Авито
+                valid_powers_set = {
+                    '1 Вт', '2 Вт', '3 Вт', '4 Вт', '5 Вт', '6 Вт', '7 Вт', '8 Вт', '9 Вт',
+                    '10 Вт', '11 Вт', '12 Вт', '13 Вт', '14 Вт', '15 Вт', '16 Вт', '17 Вт', '18 Вт', '19 Вт',
+                    '20 Вт', '22 Вт', '24 Вт', '25 Вт', '28 Вт', '30 Вт', '35 Вт', '36 Вт', '40 Вт',
+                    '45 Вт', '50 Вт', '55 Вт', '60 Вт', '65 Вт', '70 Вт', '75 Вт', '80 Вт', '90 Вт', '100 Вт'
+                }
+                invalid_powers = [
+                    ad.findtext("Power") for ad in ads
+                    if ad.find("Power") is not None and ad.findtext("Power") not in valid_powers_set
+                ]
+                sku_4690612018737_no_230 = all(
+                    ad.findtext("Power") != "230 Вт"
+                    for ad in ads if ad.findtext("Id") == "4690612018737"
+                )
+                lamps_power_valid = (len(invalid_powers) == 0 and sku_4690612018737_no_230)
+
         self.check(
             "Artifacts",
             "Соответствие схемы lamps_feed.xml (Category/GoodsType/GoodsSubType/LigitingType/BulbType/BulbBaseType/Power/BulbsInPackage)",
@@ -367,6 +384,12 @@ class BuildVerifier:
             "Фильтрация тега <Temperature> по словарю Авито (исключение нестандартных 4100 К / 4200 К на G33127T и G13629)",
             lamps_temp_valid,
             "Тег <Temperature> отсутствует на G33127T и G13629, все остальные значения входят в VALID_TEMPS"
+        )
+        self.check(
+            "Artifacts",
+            "Фильтрация тега <Power> по словарю Авито (исключение ошибочного 230 Вт на SKU 4690612018737)",
+            lamps_power_valid,
+            "Тег <Power> отсутствует для ошибочного 230 Вт, все остальные значения соответствуют словарю Авито"
         )
         print()
 
