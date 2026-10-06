@@ -493,20 +493,26 @@ class AvitoFeedGenerator:
         # 2. Категорийные теги
         cfg = FEEDS_CONFIG[feed_key]
         cat_val = cfg["category"]
-        if cat_val == "Для дома и дачи":
+        if cat_val == "Для дома и дачи" or feed_key == "lamps":
             cat_val = "Мебель и интерьер"
 
         cat_el = etree.SubElement(ad, "Category")
         cat_el.text = cat_val
 
+        goods_type_val = cfg["goods_type"]
+        if feed_key == "lamps":
+            goods_type_val = "Освещение"
+
         goods_type_el = etree.SubElement(ad, "GoodsType")
-        goods_type_el.text = cfg["goods_type"]
+        goods_type_el.text = goods_type_val
 
         # GoodsSubType: строго по официальному дереву категорий Авито
         if feed_key == "led_luminaires":
             goods_sub_type = "Потолочное и настенное"
         elif feed_key == "track_systems":
             goods_sub_type = "Уличное"
+        elif feed_key == "lamps":
+            goods_sub_type = "Лампочки"
         else:
             goods_sub_type = cfg.get("goods_sub_type")
 
@@ -538,6 +544,42 @@ class AvitoFeedGenerator:
             # 3. Светодиодный (LED) (Да / Нет)
             led_el = etree.SubElement(ad, "LedLamp")
             led_el.text = "Да"
+
+        # Специфические характеристики для фида ламп (Лист №4)
+        if feed_key == "lamps":
+            # 1. Тип лампы: Светодиодная
+            lamp_type_el = etree.SubElement(ad, "LampType")
+            lamp_type_el.text = "Светодиодная"
+            bulb_type_el = etree.SubElement(ad, "BulbType")
+            bulb_type_el.text = "Светодиодная"
+
+            # 2. Цоколь: из колонки N (base) с удалением пробелов и нормализацией
+            base_val = prod.get("base")
+            if base_val:
+                cap_type_el = etree.SubElement(ad, "CapType")
+                cap_type_el.text = base_val
+                bulb_base_el = etree.SubElement(ad, "BulbBaseType")
+                bulb_base_el.text = base_val
+
+            # 3. Мощность: из колонки M (power)
+            power_val = prod.get("power")
+            if power_val:
+                power_el = etree.SubElement(ad, "Power")
+                power_el.text = str(power_val)
+
+            # 4. Цветовая температура: из колонки Q (color_temp)
+            temp_val = prod.get("color_temp")
+            if temp_val:
+                col_temp_el = etree.SubElement(ad, "ColorTemperature")
+                col_temp_el.text = str(temp_val)
+                temp_el = etree.SubElement(ad, "Temperature")
+                temp_el.text = str(temp_val)
+
+            # 5. Световой поток: из колонки P (lumen)
+            lumen_val = prod.get("lumen")
+            if lumen_val:
+                flux_el = etree.SubElement(ad, "LightFlux")
+                flux_el.text = str(lumen_val)
 
         if prod.get("brand"):
             brand_el = etree.SubElement(ad, "Brand")
@@ -627,6 +669,34 @@ class AvitoFeedGenerator:
                         "stock": int(round(stock)),
                         "price": int(round(price))
                     }
+
+                    if feed_key == "lamps":
+                        # Нормализация цоколя: удаление пробелов, русские 'Е' -> 'E', fallback на имя
+                        base_val = prod["base"].replace(" ", "").replace("Е", "E").replace("е", "e")
+                        if not base_val or base_val.lower() == "none":
+                            m_b = re.search(r'\b([EЕ]\d+|GX\d+|GU\d+(?:\.\d+)?|G\d+)\b', name, re.IGNORECASE)
+                            if m_b:
+                                base_val = m_b.group(1).upper().replace(" ", "").replace("Е", "E")
+                        prod["base"] = base_val
+
+                        # Нормализация мощности
+                        if not prod["power"] or prod["power"].lower() == "none":
+                            m_p = re.search(r'(\d+(?:\.\d+)?)\s*(?:Вт|W)\b', name, re.IGNORECASE)
+                            if m_p:
+                                prod["power"] = m_p.group(1)
+
+                        # Нормализация цветовой температуры
+                        if not prod["color_temp"] or prod["color_temp"].lower() == "none":
+                            m_t = re.search(r'(\d{4})\s*(?:К|K)\b', name, re.IGNORECASE)
+                            if m_t:
+                                prod["color_temp"] = m_t.group(1)
+
+                        # Нормализация светового потока
+                        if not prod["lumen"] or prod["lumen"].lower() == "none":
+                            m_l = re.search(r'(\d+)\s*(?:Лм|lm)\b', name, re.IGNORECASE)
+                            if m_l:
+                                prod["lumen"] = m_l.group(1)
+
                     sheet_items.append(prod)
 
             self.feed_buckets[feed_key].extend(sheet_items)
