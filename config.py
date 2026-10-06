@@ -96,7 +96,7 @@ FEEDS_CONFIG = {
         "title": "Лампы и лампочки",
         "category": "Мебель и интерьер",
         "goods_type": "Освещение",
-        "goods_sub_type": "Лампочки",
+        "goods_sub_type": "Комплектующие",
         "template": "lamps.xml"
     },
     "lighting_fixtures": {

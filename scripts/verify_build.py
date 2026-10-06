@@ -210,7 +210,7 @@ class BuildVerifier:
                     all_parsed_strict = False
 
                 # Проверка каркаса для пустых фидов
-                if fname not in ["led_luminaires_feed.xml", "track_systems_feed.xml"]:
+                if fname not in ["led_luminaires_feed.xml", "track_systems_feed.xml", "lamps_feed.xml"]:
                     ads = tree.findall("Ad")
                     if len(ads) != 0:
                         empty_feeds_valid = False
@@ -234,7 +234,7 @@ class BuildVerifier:
             "Artifacts",
             "Валидный каркас пустых фидов <Ads formatVersion='3' target='Avito.ru'></Ads>",
             empty_feeds_valid,
-            "Все 6 пустых фидов содержат ровно 0 объявлений и валидный корневой тег"
+            "Все 5 пустых фидов содержат ровно 0 объявлений и валидный корневой тег"
         )
 
         # Глубокая валидация led_luminaires_feed.xml

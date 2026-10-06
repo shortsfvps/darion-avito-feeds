@@ -182,6 +182,34 @@ class StockSync:
             raise FileNotFoundError(f"Файлы таблицы не найдены: {self.latest_cache} и {self.fallback_cache}")
 
         wb = openpyxl.load_workbook(source, data_only=True)
+
+        # Проверяем листы 1..8: если какой-то лист в скачанной таблице пуст (нет товаров с артикулом),
+        # но в резервном эталоне (sheets_backup.xlsx) данные есть, восстанавливаем его
+        backup_path = os.path.join(DATA_DIR, "sheets_backup.xlsx")
+        if os.path.exists(backup_path):
+            wb_backup = None
+            for sname in list(wb.sheetnames):
+                m = re.match(r'^\s*([1-8])\b', sname)
+                if not m:
+                    continue
+                ws = wb[sname]
+                has_items = any(ws.cell(r, 1).value for r in range(3, min(ws.max_row + 1, 15)))
+                if not has_items:
+                    if wb_backup is None:
+                        wb_backup = openpyxl.load_workbook(backup_path, data_only=True)
+                    for bname in wb_backup.sheetnames:
+                        mb = re.match(r'^\s*([1-8])\b', bname)
+                        if mb and mb.group(1) == m.group(1):
+                            ws_b = wb_backup[bname]
+                            cnt_b = sum(1 for r in range(3, ws_b.max_row + 1) if ws_b.cell(r, 1).value)
+                            if cnt_b > 0:
+                                del wb[sname]
+                                ws_new = wb.create_sheet(title=sname)
+                                for row in ws_b.iter_rows(values_only=True):
+                                    ws_new.append(list(row))
+                                logger.info(f"Лист '{sname}' дополнен из резервного эталона ({cnt_b} позиций)")
+                            break
+
         return wb
 
     def load_stock_dict(self) -> dict:
@@ -334,42 +362,98 @@ class DescriptionBuilder:
     """Модуль генерации структурированного продающего описания товара в блоке CDATA."""
 
     @staticmethod
-    def build_description(prod: dict) -> str:
+    def _is_valid(val) -> bool:
+        """Проверяет, что значение характеристики не пустое, не 'nan' и не 'None'."""
+        if val is None:
+            return False
+        s = str(val).strip()
+        return bool(s and s.lower() not in ("none", "nan", "null", "-", ""))
+
+    @classmethod
+    def build_description(cls, prod: dict) -> str:
         name = prod.get("name", "").strip()
         sku = prod.get("sku", "").strip()
         brand = prod.get("brand", "").strip() or config.COMPANY_BRAND
 
         # Характеристики
         specs = []
-        if prod.get("power"):
-            specs.append(f"• Мощность: {prod['power']} Вт")
-        if prod.get("lumen"):
-            specs.append(f"• Световой поток: {prod['lumen']} лм")
-        if prod.get("color_temp"):
-            specs.append(f"• Цветовая температура: {prod['color_temp']} К")
-        if prod.get("base"):
+        if cls._is_valid(prod.get("power")):
+            p_val = str(prod["power"]).strip()
+            specs.append(f"• Мощность: {p_val} Вт" if not any(w in p_val.lower() for w in ["вт", "w"]) else f"• Мощность: {p_val}")
+
+        if cls._is_valid(prod.get("lumen")):
+            lm_val = str(prod["lumen"]).strip()
+            specs.append(f"• Световой поток: {lm_val} лм" if not any(w in lm_val.lower() for w in ["лм", "lm"]) else f"• Световой поток: {lm_val}")
+
+        if cls._is_valid(prod.get("color_temp")):
+            ct_val = str(prod["color_temp"]).strip()
+            specs.append(f"• Цветовая температура: {ct_val} К" if not any(w in ct_val.lower() for w in ["к", "k"]) else f"• Цветовая температура: {ct_val}")
+
+        if cls._is_valid(prod.get("base")):
             specs.append(f"• Цоколь: {prod['base']}")
-        if prod.get("ip"):
-            specs.append(f"• Степень защиты: IP{prod['ip']}")
-        if prod.get("warranty"):
-            specs.append(f"• Гарантия производителя: {prod['warranty']} года (лет)")
-        if prod.get("cri"):
-            specs.append(f"• Индекс цветопередачи: Ra ≥ {prod['cri']}")
-        if prod.get("pulsation"):
+
+        # Колонка O (15) «Тип матрицы LED»
+        if cls._is_valid(prod.get("led_matrix")):
+            specs.append(f"• Тип матрицы: {prod['led_matrix']}")
+
+        # Колонка T (20) «Тип КСС»
+        if cls._is_valid(prod.get("kss")):
+            specs.append(f"• Кривая силы света (КСС): {prod['kss']}")
+
+        # Колонка S (19) «Степень защиты»
+        if cls._is_valid(prod.get("ip")):
+            ip_val = str(prod["ip"]).strip()
+            ip_str = ip_val if ip_val.upper().startswith("IP") else f"IP{ip_val}"
+            specs.append(f"• Степень защиты: {ip_str}")
+
+        # Колонка R (18) «Индекс цветопередачи»
+        if cls._is_valid(prod.get("cri")):
+            cri_val = str(prod["cri"]).strip()
+            cri_str = cri_val if cri_val.lower().startswith("ra") else f"Ra ≥ {cri_val}"
+            specs.append(f"• Индекс цветопередачи: {cri_str}")
+
+        # Коэффициент пульсации (Колонка AL / 38)
+        if cls._is_valid(prod.get("pulsation")):
             specs.append(f"• Коэффициент пульсации: ≤ {prod['pulsation']}% (без мерцания)")
-        if prod.get("lifetime"):
-            specs.append(f"• Срок службы: {prod['lifetime']}")
-        if prod.get("mounting"):
+
+        # Колонка U (21) «Срок службы»
+        if cls._is_valid(prod.get("lifetime")):
+            lt_val = str(prod["lifetime"]).strip()
+            lt_str = f"{lt_val} ч." if re.match(r'^\d+$', lt_val.replace(' ', '')) else lt_val
+            specs.append(f"• Срок службы: {lt_str}")
+
+        # Колонка I (9) «Способ установки»
+        if cls._is_valid(prod.get("mounting")):
             specs.append(f"• Способ установки: {prod['mounting']}")
-        if prod.get("application"):
+
+        # Колонка J (10) «Область применения»
+        if cls._is_valid(prod.get("application")):
             specs.append(f"• Область применения: {prod['application']}")
-        if prod.get("body_material"):
+
+        # Колонка F (6) «Гарантия»
+        if cls._is_valid(prod.get("warranty")):
+            w_val = str(prod["warranty"]).strip()
+            w_str = w_val if any(w in w_val.lower() for w in ["год", "лет"]) else f"{w_val} года (лет)"
+            specs.append(f"• Гарантия производителя: {w_str}")
+
+        # Колонка L (12) «Количество ламп»
+        if cls._is_valid(prod.get("lamps_count")):
+            specs.append(f"• Количество ламп: {prod['lamps_count']}")
+
+        # Материал корпуса (Колонка AD / 30)
+        if cls._is_valid(prod.get("body_material")):
             specs.append(f"• Материал корпуса: {prod['body_material']}")
-        if prod.get("diffuser_material"):
+
+        # Рассеиватель (Колонка AE / 31)
+        if cls._is_valid(prod.get("diffuser_material")):
             specs.append(f"• Рассеиватель: {prod['diffuser_material']}")
-        if prod.get("dimensions"):
+
+        # Габариты (Колонки V, W, X / 22, 23, 24)
+        if cls._is_valid(prod.get("dimensions")):
             specs.append(f"• Габариты (Д×Ш×В): {prod['dimensions']} мм")
-        if prod.get("weight"):
+
+        # Масса нетто (Колонка AB / 28)
+        if cls._is_valid(prod.get("weight")):
             specs.append(f"• Масса нетто: {prod['weight']} кг")
 
         specs_block = "\n".join(specs) if specs else "• Характеристики соответствуют паспорту изделия"
@@ -512,7 +596,7 @@ class AvitoFeedGenerator:
         elif feed_key == "track_systems":
             goods_sub_type = "Уличное"
         elif feed_key == "lamps":
-            goods_sub_type = "Лампочки"
+            goods_sub_type = "Комплектующие"
         else:
             goods_sub_type = cfg.get("goods_sub_type")
 
@@ -657,6 +741,7 @@ class AvitoFeedGenerator:
                         "color_temp": format_num_val(ws.cell(r, 17).value),
                         "cri": format_num_val(ws.cell(r, 18).value),
                         "ip": format_num_val(ws.cell(r, 19).value),
+                        "kss": str(ws.cell(r, 20).value or "").strip(),
                         "lifetime": str(ws.cell(r, 21).value or "").strip(),
                         "dimensions": dim_str,
                         "weight": format_num_val(ws.cell(r, 28).value),
