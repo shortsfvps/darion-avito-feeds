@@ -1,13 +1,10 @@
 name: Update and Deploy Avito XML Feeds
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
   schedule:
-    # Запуск каждый день в 03:00 UTC (06:00 МСК)
-    - cron: '0 3 * * *'
+    # Запуск 4 раза в сутки (03:00, 07:00, 11:00, 15:00 UTC -> 06:00, 10:00, 14:00, 18:00 МСК)
+    - cron: '0 3,7,11,15 * * *'
 
 permissions:
   contents: write
@@ -19,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python 3.11
         uses: actions/setup-python@v5
@@ -35,10 +34,28 @@ jobs:
         run: |
           python scripts/generate_feeds.py
 
+      - name: Validate build and XML feeds
+        run: |
+          python scripts/verify_build.py
+
+      - name: Commit and push changes if feeds updated
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git status
+          if [ -n "$(git status --porcelain output/ feeds/ data/)" ]; then
+            echo "Changes detected in output/, feeds/, or data/. Staging and committing..."
+            git add output/ feeds/ data/
+            git commit -m "chore(auto): update feeds from google sheet [skip ci]"
+            git push origin main
+          else
+            echo "No changes detected in feeds or data. Nothing to commit."
+          fi
+
       - name: Deploy feeds to GitHub Pages (gh-pages)
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
           force_orphan: true
-          commit_message: "Auto-update Avito XML Feeds [skip ci]"
+          commit_message: "Auto-deploy Avito XML Feeds [skip ci]"
