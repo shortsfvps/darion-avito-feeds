@@ -201,7 +201,7 @@ class StockSync:
                     if mb and mb.group(1) == m.group(1):
                         ws_b = wb_backup[bname]
                         cnt_b = sum(1 for r in range(3, ws_b.max_row + 1) if ws_b.cell(r, 1).value)
-                        if cnt_b > 0 and (cnt_curr == 0 or (cnt_b >= 30 and cnt_curr < 20)):
+                        if cnt_b > 0 and cnt_curr == 0:
                             del wb[sname]
                             ws_new = wb.create_sheet(title=sname)
                             for row in ws_b.iter_rows(values_only=True):
@@ -926,6 +926,12 @@ class AvitoFeedGenerator:
             )
 
             with open(out_path, "wb") as f:
+                f.write(xml_bytes)
+
+            feeds_dir = os.path.join(config.BASE_DIR, "feeds")
+            os.makedirs(feeds_dir, exist_ok=True)
+            feeds_path = os.path.join(feeds_dir, out_filename)
+            with open(feeds_path, "wb") as f:
                 f.write(xml_bytes)
 
             file_size_kb = round(os.path.getsize(out_path) / 1024, 2)
