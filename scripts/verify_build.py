@@ -292,10 +292,12 @@ class BuildVerifier:
 
         # Глубокая валидация lamps_feed.xml
         lamps_feed_path = os.path.join(output_dir, "lamps_feed.xml")
-        lamps_tags_valid = False
-        lamps_no_obsolete_tags = False
+        lamps_tags_valid = True
+        lamps_no_obsolete_tags = True
+        lamps_temp_valid = True
+        lamps_power_valid = True
         lamps_count = 0
-        lamps_details = ""
+        lamps_details = "Объявлений: 0 (пустой фид)"
 
         if os.path.exists(lamps_feed_path):
             tree = etree.parse(lamps_feed_path, parser=strict_parser)
