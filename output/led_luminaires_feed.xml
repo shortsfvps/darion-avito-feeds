@@ -211,7 +211,7 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=20324&amp;field=image"/>
       <Image url="http://darion-svet.com/web/binary/image?model=product.picture&amp;id=1977&amp;field=image"/>
     </Images>
-    <Price>2589</Price>
+    <Price>2031</Price>
     <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
@@ -660,7 +660,7 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=20358&amp;field=image"/>
       <Image url="http://darion-svet.com/web/binary/image?model=product.picture&amp;id=1987&amp;field=image"/>
     </Images>
-    <Price>2301</Price>
+    <Price>1805</Price>
     <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
@@ -950,7 +950,7 @@
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=20370&amp;field=image"/>
       <Image url="http://darion-svet.com/web/binary/image?model=product.picture&amp;id=1991&amp;field=image"/>
     </Images>
-    <Price>2896</Price>
+    <Price>2301</Price>
     <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
@@ -1007,7 +1007,7 @@
     <Images>
       <Image url="http://darion-svet.com/web/binary/image?model=product.product&amp;id=20847&amp;field=image"/>
     </Images>
-    <Price>1282</Price>
+    <Price>962</Price>
     <AdType>Товар куплен на продажу</AdType>
     <Condition>Новое</Condition>
     <Availability>В наличии</Availability>
